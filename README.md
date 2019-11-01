@@ -5,25 +5,33 @@ A lightweight and easy-to-use tool for manually coding qualitative data in R. Th
 
 Go follow the instructions at https://www.r-project.org if you need to install R. 
 
+This R script uses the qcoder package at https://github.com/ropenscilabs/qcoder. 
 
 
 # Table of Contents
+- [Setup](#set-up)
 - [Installation](#installation)
 - [Issues](#issues)
 - [Features](#features)
 - [FAQ](#faq)
 - [License](#license)
 
+# Setup
+In order for this tool to work you need to download the pdf-to-txt folder and the qcoder_analysis folder and save them to your Desktop. 
+
 # Installation 
-To install the latest development version, run:
-```Rscript
-install.packages("devtools")
-devtools::install_github("ropenscilabs/qcoder")
-library(qcoder)
+
+
+## Pdf to Text 
+This R script requires the use of txt files. If you have documents in pdf format run the following script in OSX terminal:
+
+```
+cd ~/Desktop/pdf-to-text
+#!/bin/bash
+Rscript forloop.R
 ```
 
-## Documents
-This tool requires the use of txt files. If you have documents in pdf format run the following script: 
+Alternatively, you can run the following script directly in RStudio: 
 
 ```Rscript
 install.packages("pdftools")
@@ -43,6 +51,16 @@ for (file in file.names) {
   write(text, output.file)
 }
 
+```
+
+Once you have converted your pdfs to txt files you are ready for the next step!
+
+## Qcoder Analysis 
+To install the latest development version, run:
+```Rscript
+install.packages("devtools")
+devtools::install_github("ropenscilabs/qcoder")
+library(qcoder)
 ```
 
 ## Importing data
