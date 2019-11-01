@@ -1,0 +1,6 @@
+#create path to directory
+#create path to txt files within directory
+#copy txt files into qcoder_analysis directory
+rawPath <- "/Users/sophieavard/Desktop/pdf-to-text/txts"
+datafiles <- dir(rawPath, "*.txt", ignore.case = TRUE, all.files = TRUE)
+file.copy(file.path(rawPath, datafiles), file_path, overwrite = TRUE)

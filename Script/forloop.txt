@@ -1,0 +1,23 @@
+#this converts pdf files to txt files that are in a folder called pdfs'
+#it saves the txt files in a folder called 'txts' 
+#if the folder does not exist it will be created 
+
+
+install.packages("pdftools")
+library(pdftools)
+
+
+file.names <- dir(path="pdfs", pattern =".pdf", full.names=TRUE)
+
+
+for (file in file.names) {
+  text <- pdf_text(file)
+
+  
+  output.file <- gsub("pdf", "txt",file)
+  print(output.file)
+  print(file)
+  write(text, output.file)
+}
+
+
