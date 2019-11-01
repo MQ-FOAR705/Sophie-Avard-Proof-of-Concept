@@ -1,7 +1,7 @@
 
 
 # Background
-A lightweight and easy-to-use tool for manually coding qualitative data in R. This repository provides instructions and an installation script for running this tool in R.
+A lightweight and easy-to-use tool for analysing qualitative data in R. This repository provides instructions and an installation script for running this tool in R. This tool can be used for any textual data, such as: interview transcripts, fieldwork notes, and primary documents.
 
 Go follow the instructions at https://www.r-project.org if you need to install R. 
 
@@ -103,7 +103,9 @@ Using a tagging system, codes can be assigned to text in two ways:
 
 2. To use an existing code, highlight the text to be assigned a code, select the code, click ```add selected code```
 
-When you are finished with coding the documents click ```save changes``` button
+When you are finished with coding the documents click ```save changes``` button.
+
+Instructions on how to code data using qcoder can be found at https://github.com/ropenscilabs/qcoder. 
 
 **Known Issues** 
 
