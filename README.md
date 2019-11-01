@@ -1,7 +1,9 @@
 
 
 # Background
-A lightweight and easy-to-use tool for analysing qualitative data in R. This repository provides instructions and an installation script for running this tool in R. This tool can be used for any textual data, such as: interview transcripts, fieldwork notes, and primary documents.
+This repository was created as part of the Digital Humanities unit within Masters of Research at Macquarie University. It is a proof of concept (POC) that attempts to use digital tools and techniques for analysing qualitative data. Moreover, attempts have been made to automate testing via continuous integration. 
+
+This PoC is a lightweight and easy-to-use tool for analysing qualitative data in R. This repository provides instructions and an installation script for running this tool in R. This tool can be used for any textual data, such as: interview transcripts, fieldwork notes, and primary documents.
 
 Go follow the instructions at https://www.r-project.org if you need to install R. 
 
@@ -9,12 +11,26 @@ This R script uses the qcoder package at https://github.com/ropenscilabs/qcoder.
 
 
 # Table of Contents
-- [Setup](#set-up)
+- [Outline of the project](#outline)
+- [Setup](#setup)
 - [Installation](#installation)
 - [Issues](#issues)
 - [Features](#features)
 - [FAQ](#faq)
 - [License](#license)
+
+# Outline
+For this PoC, I searched Macquarie University's Library and found two pdf documents that are relevant to my MRes thesis. These were downloaded and saved to my PoC repository. 
+
+I then used R to:
+- Create a folder called 'txts'
+- Convert the pdfs to txt files 
+- Move the txt files to the 'txts' folder
+- Import qcoder package 
+- Import units and codes for textual analysis 
+- Build a path between the txt files and R 
+- Reduce repeitive work by integrating all of these processes
+
 
 # Setup
 In order for this tool to work you need to download the pdf-to-txt folder and the qcoder_analysis folder and save them to your Desktop. 
