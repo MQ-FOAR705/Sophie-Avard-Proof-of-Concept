@@ -1,4 +1,4 @@
-
+test
 
 # Background
 A lightweight and easy-to-use tool for manually coding qualitative data in R. This repository provides instructions and an installation script for running this tool in R.
