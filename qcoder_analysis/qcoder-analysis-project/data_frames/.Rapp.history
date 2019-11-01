@@ -1,0 +1,4 @@
+load("/Users/sophieavard/Desktop/qcoder_analysis/my_project/data_frames/qcoder_documents_my_project_2019_10_30_12_22_08.rds")
+load("/Users/sophieavard/Desktop/qcoder_analysis/my_project/data_frames/qcoder_documents_my_project_2019_10_30_12_28_22.rds")
+load("/Users/sophieavard/Desktop/qcoder_analysis/my_project/data_frames/qcoder_documents_my_project_2019_10_30_12_35_53.rds")
+load("/Users/sophieavard/Desktop/qcoder_analysis/my_project/data_frames/qcoder_documents_my_project_2019_10_30_12_35_53.rds")
