@@ -1,0 +1,889 @@
+Cult Med Psychiatry (2018) 42:684–703
+https://doi.org/10.1007/s11013-018-9581-z
+ ORIGINAL PAPER
+‘‘My Heart Die in Me’’: Idioms of Distress
+and the Development of a Screening Tool for Mental
+Suffering in Southeast Liberia
+Katrin Fabian1,2 • Josiah Fannoh2,3 • George G. Washington3                          •
+Wilfred B. Geninyan2,3 • Bethuel Nyachienga2 • Garmai Cyrus2                         •
+Joyce N. Hallowanger4 • Jason Beste1,5,6 • Deepa Rao1 •
+Bradley H. Wagenaar1,2,7
+Published online: 4 May 2018
+ Springer Science+Business Media, LLC, part of Springer Nature 2018
+Abstract The integration of culturally salient idioms of distress into mental
+healthcare delivery is essential for effective screening, diagnosis, and treatment.
+This study systematically explored idioms, explanatory models, and conceptual-
+izations in Maryland County, Liberia to develop a culturally-resonant screening tool
+for mental distress. We employed a sequential mixed-methods process of: (1) free-
+lists and semi-structured interviews (n = 20); patient chart reviews (n = 315); (2)
+pile-sort exercises, (n = 31); and (3) confirmatory focus group discussions (FGDs);
+(n = 3) from June to December 2017. Free-lists identified 64 idioms of distress, 36
+of which were eliminated because they were poorly understood, stigmatizing,
+irrelevant, or redundant. The remaining 28 terms were used in pile-sort exercises to
+visualize the interrelatedness of idioms. Confirmatory FDGs occurred before and
+after the pile-sort exercise to explain findings. Four categories of idioms resulted,
+the most substantial of which included terms related to the heart and to the
+brain/mind. The final screening tool took into account 11 idioms and 6 physical
+Electronic supplementary material The online version of this article (https://doi.org/10.1007/s11013-
+018-9581-z) contains supplementary material, which is available to authorized users.
+& Katrin Fabian
+     katrin.fabian@gmail.com
+1
+     Department of Global Health, University of Washington, 1959 NE Pacific Street, Seattle,
+     WA 98195, USA
+2
+     Partners in Health, Monrovia, Liberia
+3
+     Tubman University, Harper, Liberia
+4
+     Mental Health Program, Ministry of Health, Harper, Liberia
+5
+     Brigham and Women’s Hospital, Boston, MA, USA
+6
+     Harvard Medical School, Boston, MA, USA
+7
+     Health Alliance International, Seattle, WA, USA
+ 123
+
+Cult Med Psychiatry (2018) 42:684–703                                             685
+symptoms extracted from patient chart reviews. This study provides the framework
+for culturally resonant mental healthcare by cataloguing language around mental
+distress and designing an emic screening tool for validation in a clinical setting.
+Keywords Idioms of distress  Liberia  Screening tool development 
+Culture and psychiatry  Mental health
+Introduction
+Providing adequate mental healthcare in non-Western low-resource settings requires
+understanding culturally salient expressions of mental suffering and how such
+expressions manifest in various contexts. While translating DSM or ICD-based
+screening tools to reflect local languages provides a modicum of cultural
+representation, this etic approach often fails to capture the unique expressions of
+mental suffering that occur within non-Western cultures (Kaiser et al. 2015b;
+Kleinman 1987). In Haiti, for instance, locally-developed screening tools that
+incorporated idioms of distress were associated with better specificity and cultural
+equivalence than screening tools that were directly translated from English to
+Haitian Kreyól (Kaiser et al. 2013). The problematic imposition of Western
+conceptualizations of mental illness on non-Western cultures perpetuates paternalist
+and neo-colonial practices that exclude local ideologies at the expense of those
+suffering from mental distress. A growing body of research acknowledges the
+subjectivity of the presentation and conceptualization of mental ill-health and calls
+for emic research that understands non-Western explanatory models and forms
+screening tools and diagnostic frameworks from local concepts (Summerfield 2008;
+Kaiser et al. 2014; Weaver 2017). Incorporating local idioms of mental distress into
+mental healthcare and psychiatric treatment has become an increasingly well-
+recognized way of prioritizing local perspectives and grassroots mental health
+research as well as providing culturally sensitive care in non-Western contexts.
+   In many non-Western settings, the terms ‘‘anxiety’’ and ‘‘depression’’ have no
+direct equivalences in local languages and are not well recognized by people who
+have had little exposure to Western medical training or formalized education
+(Sweetland, Belkin, and Verdeli 2014). Psychiatric categories based on biomedical
+models oversimplify the nuances of language that describe the breadth of
+experiences associated with mental suffering and potentially fail to identify many
+who could benefit from treatment (Summerfield 2012). Psychiatry, which unlike
+other medical professions, requires diagnostics based on symptoms that differ
+between cultures rather than on biomarkers or lab tests, has the potential to provide
+an avenue for more culturally resonant clinical encounters through understanding
+local communications of mental distress (Keys et al. 2012; Haroz et al. 2017;
+Kirmayer 2001). Research has shown that explanatory models rooted in non-
+medical practices and beliefs are not anathema to biomedical explanations for
+mental illness, but rather provide an opportunity for collaborative treatment
+pathways that value local knowledge (Khoury et al. 2012). Furthermore, neglecting
+to acknowledge locally-resonant etiologies can reinforce the false dichotomy
+                                                                            123
+
+686                                                   Cult Med Psychiatry (2018) 42:684–703
+between biomedical and traditional practices. Ideally, understanding a particular
+culture’s articulation of mental distress can inform medical practices built from
+local ideologies in which patients can see their culture and belief system reflected.
+Especially in rural areas in sub-Saharan Africa, where somatic symptoms are
+strongly associated with mental distress (Quarshie 2006), healthcare environments
+that utilize open communication about symptoms associated with mental distress
+and their social context can provide a deeper understanding and more holistic view
+of these conditions.
+   Early ethnographic explorations of idioms of mental distress in non-Western
+contexts have evolved to a more nuanced discussion of the relationships between
+expressions of mental suffering and the broader social, cultural, religious, and
+political context. The term ‘‘idioms of distress’’ refers to culturally specific
+expressions of suffering, which occur in populations worldwide, as all mental
+distress is influenced by culture and context. A significant body of work has been
+compiled regarding idioms of distress in sub-Saharan Africa. The term kufungisisa
+in Zambia and South Africa was identified as symptomatic of mental distress as well
+as physical and spiritual suffering (Patel, Simunyu, and Gwanzura 1995). In
+Uganda, the condition false teeth is not only an affliction among children, but is also
+thought to be an expression of socioeconomic hardships within the collective
+population. Ugandan mothers recognize the novel nature of the condition and
+attribute its conception with the atrocities of the Amin regime. In this way, this
+idiom is thought to be an expression of the collective trauma of war and violence as
+well as subsequent poverty and socioeconomic stress (Mogensen 2000). In Guinea
+Bissau, the phenomenon of kiyang-yang arose among Balanta women as a way of
+expressing both individual and collective trauma associated with poverty, conflict,
+and as a way of emphasizing the oppressive aspects of Balanta society that
+reinforced these stressors (de Jong and Reis 2010). This term’s use as an expression
+of political dissent as well as individual and collective suffering and mental distress
+further illustrates the multifaceted and complex utility of idioms of distress in
+communicating trauma and distress on both an individual and societal level.
+   Previously explored idioms of distress from other settings have set a framework
+on which culturally resonant mental healthcare has been built. As early as the 1960s,
+researchers developed a psychometric instrument based on the idiom brain fag in
+West Africa to measure conditions related to stress among students (Ola and
+Igbokwe 2011). Research in Haiti has revealed the prevalence of head-related and
+heart-related terms when describing mental suffering, which informed the
+development of an emic distress screener utilizing these terms (Keys et al. 2012;
+Rasmussen et al. 2015; Kaiser et al. 2013). In Nepal, researchers have identified four
+distinct concepts of self and deconstructed mind–body divisions that communicate
+mental distress (Kohrt and Harper 2008; Kohrt and Hruschka 2010). Subsequent
+studies have used these ethnopsychologies as a basis to create culturally informed
+screening tools for depression and childhood trauma (Kohrt et al. 2011). Research in
+Cambodia exploring explanatory models related to khyal attacks precluded the
+development of a culturally sensitive questionnaire for trauma among Cambodian
+refugees (Hinton et al. 2010, 2013). Mental healthcare built upon local idioms and
+communication strategies can foster accessible and nuanced pathways to care that
+ 123
+
+Cult Med Psychiatry (2018) 42:684–703                                                              687
+support the treatment objectives of patients and clinicians, and preliminary
+ethnographic research is a necessary first step.
+   In Liberia, few studies have explored idioms of distress and mental health
+communication. Abramowitz’ 2010 study of the term open mole provided an in-
+depth look at this condition/culture-bound syndrome in the northwest of Liberia
+(Abramowitz 2010). The Carter Center conducted an unpublished qualitative
+assessment of general idioms of distress, which also took place in 4 counties in
+northwest Liberia. They also developed a culturally adapted but unvalidated version
+of the PHQ-9 for Liberia, though no emic screening tools have been developed to
+incorporate local presentations and idioms of distress. This study takes an in-depth
+look at distress idioms and local presentations of mental suffering with a specific
+focus on symptoms that overlap with less well recognized forms of distress that
+biomedical etiologies associated with common mental disorders. It is the first of its
+kind to examine idioms for the purpose of developing a culturally informed
+screening tool that can capture a wider range of symptomatic presentations and
+serve as foundational mental health research upon which further studies can build.
+Methods
+Study Setting
+Liberia entered a period of national recuperation and reconstruction following its
+emergence from a 13-year civil war in 2003. The rebuilding process was interrupted
+in 2014 by the Ebola epidemic that infected an estimated 10,687 people and directly
+Fig. 1 Map of Partners In Health’s activities in Liberia. This study took place in Maryland county
+                                                                                          123
+
+688                                                   Cult Med Psychiatry (2018) 42:684–703
+led to the loss of over 8% of the healthcare workforce nationwide (Evans, Goldstein,
+and Popova 2015; Centers for Disease Control 2016). Maryland county (see Fig. 1),
+which contains approximately 136,000 of Liberia’s 3.5 million people, is located in
+the remote and often inaccessible southeast corner of the country on the border of
+Côte D’Ivoire (Government of the Republic of Liberia 2008). A large portion of the
+population in this region sought refuge in Côte D’Ivoire during the civil war, which
+led to the substantial disruption of the healthcare system. Following the civil war,
+one epidemiological survey found 40% of adults met the criteria for Major
+Depressive Disorder and 44% met the criteria for PTSD (Johnson et al. 2008).
+Liberia has one psychiatric hospital and considerable stigma exists surrounding
+mental healthcare, for both clinicians and patients (Esan et al. 2014; World Health
+Organization 2011; Gwaikolo, Kohrt, and Cooper 2017).
+Data Collection and Sampling
+We employed a variety of qualitative research techniques including: (1) free-lists
+accompanied by semi-structured interviews (SSIs); (n = 20); (2) pile-sort (n = 31)
+exercises, and (3) focus group discussions (FGDs); (n = 3). We also reviewed a
+census of 315 charts from JJ Dossen Hospital and Pleebo Health Center, the only
+regional hospital and health center in the southeast that contain clinics exclusively
+for mental health. All qualitative interviews and exercises were conducted by the
+lead author and at least one of three trained Liberian research assistants.
+   We used maximum variation sampling to obtain a representative sample of Maryland
+County in terms of age, gender, ethnic community, education level, occupation, and
+geographical area. Participants ranged from 19 to 81 years old and represented five
+distinct ethnic communities. Participants lived in both the urban centers of Harper and
+Pleebo, as well as in the surrounding rural communities. This purposive sampling
+method allowed us to conduct all data collection in English. The study took place over a
+6-month period from June to December 2017 in Maryland County, with support from
+Partners In Health, a large NGO that supports clinical services, community health,
+infrastructure development, and social support in southeast Liberia.
+Step 1: Free-List Exercise and Semi-structured Interviews
+We conducted free-list exercises along with SSIs among lay participants (n = 20, 8
+women and 12 men) to compile an initial list of common idioms of mental distress.
+Our sample size was not predetermined, but rather focused on achieving saturation
+when no new information was repeatedly gleaned from interviews. During these
+interviews, we did not use the word ‘‘mental illness’’, as it is poorly understood
+among laypeople in the region. We instead developed descriptive situations that
+included prompts such as, ‘‘what are some words you can use to describe someone
+in the community who is feeling sad, is just thinking, worrying, in a way that is
+different than normal?’’. All free-lists were accompanied by a semi-structured
+interview, during which we asked each participant to explain and elaborate on the
+terms they listed, or, in some cases, to explain their conceptualization of a term that
+other participants had mentioned. Free-lists and SSIs were audio recorded and
+ 123
+
+Cult Med Psychiatry (2018) 42:684–703                                                 689
+accompanied by written field notes and then subsequently transcribed. Resultant
+qualitative data was analyzed using QSR NVivo 11 software.
+   After the results of the initial term elicitation from the 20 free-list exercises and
+semi-structured interviews were compiled, we conducted a focus group to better
+understand the linguistic similarities and differences between terms to make an
+informed decision about which terms could be combined and which represented
+separate concepts. This focus group also allowed us to further differentiate between
+terms which were directly related to epilepsy or psychotic symptoms, which we
+excluded from the final list of terms for the pile-sort activity. We also eliminated
+terms that were considered too general or not explicitly tied to mental distress, terms
+that were considered stigmatizing, and terms that were only mentioned by one
+person and are therefore not considered part of a shared cultural domain (Bernard
+and Ryan 2010). Smith’s Salience was calculated for the final list of terms, which
+takes into account the frequency and the order of mention for each term, both of
+which are indicators of familiarity (Bernard and Ryan 2010). The 28 most salient
+terms were included in the pile-sort activity.
+Step 2: Pile-Sort Exercises
+Pile-sorts were conducted among a new naı̈ve set of participants (n = 31, 15 women
+and 16 men). The purpose of the exercise was to understand the relationships
+between the terms that emerged from the free-list exercise. Following the process
+outlined in Bernard and Ryan (2010), each term was written on a note card and
+participants were asked to group the cards according to how the terms related to
+each other (Bernard and Ryan 2010). Participants could create as many piles as they
+thought necessary and exclude any cards that were unrelated or not understood. We
+accounted for literacy by reading the cards aloud for all participants. The results
+were analyzed using ANTHROPAC 4.983 to create a multidimensional scale
+visualization of the groupings and interconnectedness of terms, with the resulting
+cluster analysis overlaid in color on the graphic (Borgatti 1996).
+Step 3: Chart Reviews
+We reviewed a census of 315 patient charts written at initial visits from May 2015 to
+September 2017 in the mental health clinic of the county hospital in Harper city in
+order to examine the commonly expressed somatic symptoms that accompany mental
+distress in a clinical setting. We captured qualitative data that identified the physical
+complaints of patients during the clinical encounter and any idioms patients used to
+describe their presenting features. Recognizing that current diagnostic criteria are
+based solely on a biomedical model of mental illness, we reviewed all charts and
+extracted qualitative data from those that potentially reflected local presentations of
+mental distress across diagnostic categories. We abstracted data from the ‘‘presenting
+complaints’’ and the ‘‘patient history’’ section of the charts, both of which were
+handwritten lists or narratives of the patient’s primary complaints and rarely
+contained interpretation from the clinician. For this reason, these sections were
+thought to accurately reflect words exchanged during the clinical encounter and
+                                                                               123
+
+690                                                             Cult Med Psychiatry (2018) 42:684–703
+therefore provide a representation of the patient’s complaints and reasons for visiting
+the clinic. We reviewed a census of 315 charts and extracted qualitative data from 189
+that contained a substantive patient history and/or presenting complaints section. Re-
+sults were coded for symptomatology and idioms using QSR NVivo 11 software.
+Step 4: Screening Tool Development
+The final screening tool contained two domains, one with locally-derived idioms of
+distress each paired with a function impairment question, and the other with common
+physical manifestations of mental suffering. We sought confirmation and further
+explanation of the results of the free-list and pile-sort exercises in two focus groups, one
+with 9 lay community members (3 women and 6 men) and one with 4 mental health
+clinicians (2 women and 2 men). For terms represented in the graphic visualization of
+the cluster analysis (Fig. 2), we engaged in a discussion designed to clarify which terms
+in each distinct cluster were the most appropriate for a screening tool. For each cluster
+Fig. 2 Multidimensional scale representation of 28 idioms of distress from pile-sort activities, colors
+overlaid represent distinct groupings resulting from cluster analysis
+ 123
+
+Cult Med Psychiatry (2018) 42:684–703                                                 691
+of terms, we identified the terms that were the most well understood and represented
+distinct ideas or phenomena. For situations in which multiple terms referred to the same
+phenomenon, we discussed which term best encapsulated the phenomenon with the
+most clarity. For the physical presentations, we included the symptoms that were most
+commonly mentioned in the patient charts and did not directly overlap with symptoms
+mentioned in the idioms portion of the screener in order to reduce redundancy. The
+focus groups were a confirmatory mechanism to ensure the relevance of our term
+choices and the clarity of our language usage.
+Analyses
+Our qualitative analysis followed the methods for Cultural Domain Analysis (CDA)
+described in Bernard and Ryan (2010). The authors describe this as a technique used
+for generating and understanding a set of concepts that refer to the same conceptual
+sphere (Bernard and Ryan 2010). For the initial term elicitation, we calculated
+Smith’s Salience, a statistic that takes into account both the frequency and how early
+each term was mentioned (Bernard and Ryan 2010). For pile-sort exercises, we used
+multidimensional scaling (MDS) in order to understand the structure of terms within
+the domain of mental distress. This generated a visualization of the relationships
+between terms. A subsequent hierarchical cluster analysis confirmed the accuracy of
+groupings among the terms. We calculated the eigenratio of the domain to
+determine consensus among participants. All numeric calculations and visualiza-
+tions were conducted using ANTHROPAC 4.983 software (Borgatti 1996).
+Results
+Our results yielded idioms that referred to a multitude of ways of experiencing mental
+distress and personalized the narratives behind these expressions. During a particularly
+poignant interview, one mental health clinician recounted the story of a patient who was
+suffering from mental distress but struggled to find the words to express what he was
+experiencing. The patient complained of severe recurrent headaches, the inability to
+focus, and a deep sadness that he described with a particular term that the clinician was
+having trouble remembering, but that had brought her to tears. After some time, a look
+of grief and recognition passed on her face; she picked up a pen, wrote something on her
+hand, and held it out. ‘‘My heart die in me’’.
+   This evocative example highlights the importance of idioms in expressing mental
+distress and exemplifies how one idiom can encapsulate a myriad of ‘‘classical’’
+symptoms of mental ill-health. Through the processes of analyzing the qualitative
+date from the SSIs, FGDs, free-list, and pile-sort activities, we found that the
+majority of idioms fell into two distinct categories, one of terms related to the mind
+and brain, and other of terms related to the heart. Two smaller collections of terms
+were those related to losing consciousness and those relating to conditions
+associated with both mind/brain and heart terms. One last term was frequently
+excluded by participants and therefore fell outside of the other terms, indicating it
+was poorly understood. The clustering of these categories can be found in Fig. 2.
+                                                                               123
+
+692                                                      Cult Med Psychiatry (2018) 42:684–703
+Step 1: Free List Exercises and Semi-structured Interviews
+Interviews with 20 participants (8 women and 12 men) resulted in an initial list of
+64 idioms of mental distress. Smith’s Salience was calculated for each term, the
+values of which ranged from 0.003 to 0.689 (see Supplementary Appendix I). Our
+initial term elicitation interviews yielded terms referring to a range of conditions
+including terms associated with psychotic symptoms and seizures. During the SSIs,
+we asked participants to elaborate on each term they listed. A subsequent FGD,
+combined with the data from the SSIs, led us to eliminate 36 terms that were poorly
+understood or stigmatizing, terms referring explicitly to seizures or psychosis, terms
+that were not part of a shared cultural domain, and multiple terms referring to the
+same concept (see Supplementary Appendix I for excluded idioms). Twenty-five
+terms were only mentioned once and were therefore eliminated for not being part of
+a shared cultural domain.
+   Of the initial list of idioms, we discuss three highly salient and evocative
+examples used to communicate mental distress in rural Liberia: frustration, thinking
+too much, and pressure.
+   The term frustration emerged as the most salient term, with a Smith’s Salience
+value of 0.689. This term, which was endorsed by 19 out of 20 free-list and SSI
+participants, has a range of meanings that encompass a wide variety of symptoms
+and idioms. As one person stated, when a person is frustrated, ‘‘they feel that all is
+lost, life is not in their favor, so they can just let go, let loose’’ (business owner, 35,
+male). Others described it as ‘‘hard thinking, plenty thinking, thinking too much’’
+(Township Clerk, 55, male), having ‘‘plenty trouble in the heart’’ (farmer, 75, male),
+‘‘you feel you are defeated, that you’re giving up’’ (university professor, 76, male).
+The term was associated with behavior change that goes beyond everyday feelings
+of sadness. As one businesswoman (age 41) described:
+   Someone who is frustrated is different. There are some people, they are not
+   frustrated but they are just quiet, they are sad. And they have some people who
+   are frustrated and because of this they decide to carry themselves away from
+   people, to just be away, I’m in my problem let me just be alone, I don’t need
+   someone to be around me.
+   Thinking too much was also widely used to express mental distress, and was the
+second most salient idiom, with a Smith’s Salience of 0.444. Thinking too much was
+described in a variety of circumstances, usually associated with preoccupied and
+ruminating thoughts. A traditional healer (male, 42) described the difference
+between thinking too much and worrying about small things:
+   I worry about the clothes that the man wears, I hope I will get that thing, that
+   person’s worrying about that thing. But thinking, with your whole knowledge,
+   your whole heart, your whole mind, everything’s on that thing. It means you
+   just focus on that whole thing.
+   Thinking too much was thought of as pathological and was frequently associated
+with other symptoms. One woman told us that ‘‘sometimes you walk in the street
+because the thinking too much for you, you talk by yourself’’ (single mother, 36),
+ 123
+
+Cult Med Psychiatry (2018) 42:684–703                                              693
+referring to two symptoms (walk in the streets and talk by yourself) endorsed as
+relating to psychosis. Another respondent echoed this explanatory model, saying
+that someone who is thinking too much can ‘‘suffer from some sort of stigma, stress
+from too much thinking, like family problem or other thing, they get them to
+mentally disordered’’ (policewoman, 30).
+   Many respondents commented on the development of pressure (Smith’s Salience
+0.389), which has various clinical interpretations. Many respondents mentioned
+pressure as synonymous with hypertension, or high blood pressure. As one retired
+government official (male, 81) explained:
+   Pressure can start from the food we eat. For instance, I had pressure, they told
+   me not to eat…before I went to hospital in Monrovia, when they check me
+   they say what type of food you eating? I told them; they say from now on
+   don’t eat butter rice again.
+   Other respondents told us that pressure results from mental distress. Specifically,
+‘‘when you think too much, it runs down into your brain and you develop pressure;
+you have mental tension’’ (female business owner, 41). Or alternatively, ‘‘To be
+overjoyed, to be anger, too much talking, stress, worry over one problem can make
+you go high, cause pressure’’ (businesswoman, 34). Respondents described pressure
+as a physical sensation, usually a head or neck pain. One local governor (female, 47)
+explained ‘‘most time from your neck, your head start to hurt unnecessary, but it
+treat people different–different ways, sometimes your eyes start to turn [dizziness
+occurs]’’. In most instances, pressure emerged as a salient term to communicate
+mental distress, regardless of the degree of biomedical association. One woman told
+us she had high blood pressure and said, ‘‘sometimes you worry too much, then the
+pressure can be too much for you too, and they do your BP, but that not high blood
+pressure’’ (housewife, 51).
+   These idioms reflect a few examples of culturally salient idioms and explanatory
+models for mental ill-health in Liberia, though the dynamic and multifaceted nature
+of culture itself means that interpretations inevitably vary. The full list of idioms
+from the pile-sorts, their salience, and their general meanings are in supplementary
+appendix III.
+Step 2: Pile-Sort Exercises
+Four distinct groupings of terms emerged from the pile-sort activity, with each
+category seemingly representing different aspects of mental distress and their
+associated symptoms (see Fig. 2). The eigenratio resulting from the consensus
+analysis was 7.087, indicating agreement among participants. The two most
+substantial categories include terms related to the heart and terms related to the
+brain and mind. Out of the 28 terms included in the pile-sort activity, 75% fell into
+one of these two categories. Heart-related terms, which accounted for 10 of 28,
+primarily described various emotions or emotional states. Specifically, several terms
+related to feeling upset, angry, or short tempered (heart not good, heart heavy, heart
+spoiled). One barber (32, male) described:
+                                                                            123
+
+694                                                   Cult Med Psychiatry (2018) 42:684–703
+    Sometimes maybe somebody make you vexed already, and while you thinking
+    about that and somebody wants to bring jokes to you, you say ‘no, my man,
+    my heart not good, my heart spoiled, so I don’t want you bother me’.
+    One term that fell into the heart-related category, too much fear in you, describes
+feeling anxious or easily frightened, and was closely linked to the term heart cut,
+meaning startled, or the sensation of the heart skipping a beat or palpitating. A
+mental health clinician (female, 44) described people who experience this, saying
+‘‘they just fear that something big is going to happen to them, and they are jittering,
+on edge, like if you touch something their heart will cut and they want to jump’’.
+Another term in this category, heart fall down, describes disappointment, or lack of
+trust, as when ‘‘maybe I do something to you that does not please you, it can make
+your heart to fall down from me’’ (farmer, 59). Several other terms described
+feelings of being overburdened or overwhelmed, such as too much on the heart,
+problems on the heart, and trouble on the heart. One Township Clerk (male, 55)
+described a situation that leads to too much on the heart:
+    The money that I was depending on, I know next month my house I will pay it.
+    Then someone steals my money. Too much on the heart. Keeping somebody’s
+    money, if I don’t have strong heart, sometimes it’s cause frustration.
+    Heart terms were connected to both emotional pathology and resilience.
+Respondents referred to this resilience as having a ‘‘strong heart’’, or occasionally,
+a ‘‘man heart’’ (though it was stated that many women have a ‘‘man heart’’). One
+respondent explained, ‘‘if I don’t have strong heart, sometimes it can lead to
+frustration’’. Or alternatively, ‘‘your heart cut, you can feel something happening,
+you can get sickness if you not get strong heart’’ (fisherman, 26).
+    The terms heart cut and too much fear in you, while still in the heart-related
+category according to the cluster analysis, were situated closest to a third cluster of
+terms that was comprised of the terms fall off, go off, pressure, and eye turning,
+suggesting a relationship. This group seemingly describes terms related to losing
+consciousness or fainting. Eye turning, which means dizziness, and pressure, which
+was described above, relate to fall off and go off, both of which refer to losing
+consciousness. Respondents described a number of situations in which falling off
+and going off can occur, ranging from epileptic fits to sudden and surprising news to
+stressful events. One farmer (male, 59) described such a situation:
+    I saw it once; a lady, she had a man who had another friend, so the worriness,
+    you know she was thinking too much, could not eat, don’t want to eat, feel like
+    she was losing her man so, one day she had to fall off.
+    One mental health clinician suggested these terms can refer to panic attacks,
+though differentiating between this and other interpretations including losing
+consciousness and epileptic episodes remains a challenge.
+    The largest cluster, comprising 11 of the 28 pile-sort terms (39%), included terms
+related to the mind or brain. Contrasting to the heart-related terms that primarily
+described emotions and emotional states, this cluster includes terms related to
+thinking, focus, and attention. The terms mind is far off, attention is not there, brain
+ 123
+
+Cult Med Psychiatry (2018) 42:684–703                                                695
+can’t sit down, and can’t focus your mind refer to a lack of concentration or inability
+to focus. Some respondents explained this as an extreme symptom associated with
+psychosis, as in ‘‘if he thinking too much, it makes the mind be crazy. You don’t
+know what you’re doing, your mind far away from you’’ (cleaner, male, 64).
+Thinking too much, problems on the mind, brain hot, and playing on the mind
+generally refer to rumination, whereas not to yourself and do things out of the way
+refer to abnormal behavior or confusion. The term frustration, which has been
+described above in detail, also falls in this category, though many respondents
+explained frustration as an outcome resulting from various other idioms in the
+brain/mind and heart categories. The mind and brain related terms were frequently
+referenced as part of a causal pathway leading to more severe mental illness, with
+respondents citing these idioms as leading to craziness, particularly if they are not
+treated.
+   The terms traumatized and tension comprise a fourth grouping of idioms located
+between the mind/brain terms and the heart terms. Similar to the term frustration,
+the term traumatized was cited as referring to a condition that could result from a
+number of factors, including both heart and mind/brain idioms. Tension was
+described as stress or as a product of stress. As one respondent described, ‘‘if you
+thinking too much, it runs down into your brain and you develop pressure, you have
+tension, mental tension’’ (businesswoman, 41).
+   The location of several terms on the chart indicates the interrelatedness between
+clusters. Tension, traumatized, and worrying too much lie in between the brain/mind
+and the heart clusters, indicating that they are associated with both groups.
+Similarly, heart cut and too much fear in you lie between the heart-related terms and
+the terms related to fainting and unconsciousness. The last term, go deep into a
+problem, stood out on its own. Participants frequently excluded this term from the
+activity and indicated that it was not well understood.
+   Participants described multiple causal models that explain the interrelatedness
+between groupings of idioms. Some participants described how symptoms described
+in the mind/brain grouping or the heart grouping could lead to outcomes in the
+grouping of terms associated with losing consciousness. One person explained that
+‘‘some children don’t listen, it can cause pressure and could make you to fall off. If
+you thinking too much, it can make you to fall off’’ (businesswoman, 41). A
+common narrative that emerged placed distress idioms on a causal path leading to
+more severe mental illness if left untreated. One person, when talking about mental
+distress in general, said ‘‘I look at it like the person will become mentally ill.
+Because it’s like placing a wound, a scar on that person’s mind. Which needs cure.
+It needs cure and if not well taken care of it will intensify’’ (police officer, female,
+30). Participants frequently cited a person’s inherent capacity to handle certain
+stimuli, usually referring specifically to the heart and brain/mind. Once this capacity
+was breached, illness occurred. A traditional healer (male, 43) explained this
+process:
+   Human beings have a level that you’re supposed to think about. Your thinking
+   supposed to stop. Sometimes when you’re above that level, sometimes your
+                                                                              123
+
+696                                                        Cult Med Psychiatry (2018) 42:684–703
+    mind, you [do] things that you’re not supposed to do. You are doing things
+    that just [go] to craziness.
+Step 3: Chart Reviews
+The review of 315 charts resulted in 189 charts with narratives in the patient history
+and presenting complaints sections. Further analyses revealed 65 mentions of 8
+distinct physical symptoms associated with mental distress within these 189 charts
+(34.4% of charts with physical symptoms noted). Trouble sleeping was the most
+frequently mentioned symptom with 17 mentions, or 26% of all physical complaints
+including this symptom (see Table 1). Sleep trouble included trouble falling asleep,
+staying asleep, not sleeping enough, or sleeping too much. Headache was the second
+most common symptom, mentioned 15 times, followed by fast heartbeat (n = 8),
+problems eating, including lack of appetite or overeating (n = 7), unexplained body
+pain (n = 7), odd bodily sensations, including ‘‘feeling something walking on the
+body’’ or ‘‘feeling something walking on the head’’ (n = 5), feelings of weakness,
+tiredness, or lethargy (n = 4), and numbness (n = 2).
+Step 4: Screening Tool Development
+Among the terms heart spoiled, heart heavy, and heart not good, for instance,
+participants chose the term heart not good as it is the most well understood of these
+three terms that refer to the same phenomenon. We included 11 terms in the final
+screener that were deemed to represent separate concepts relevant to mental distress.
+From the pile-sort analyses and resulting multidimensional scale visualization, we
+included 5 idioms each from the mind/brain cluster and the heart cluster, as well as
+the term pressure from the cluster related to losing consciousness. The final
+screening tool was divided into two parts and included 11 idioms of distress and 6
+physical symptoms with each item accompanied by a question pertaining to
+functional impairment, and can be found in the Supplementary Materials in
+Appendix II. The approximate meanings of each term from the pile-sort activity can
+be found in Online Appendix III.
+Table 1 Physical symptoms extracted from patient charts
+Symptom                                                 n                                  %
+Sleep trouble                                           17                                 26.2
+Headache                                                15                                 23.1
+Fast heartbeat                                           8                                 12.3
+Problems eating                                          7                                 10.8
+Unexplained pain                                         7                                 10.8
+Odd bodily sensations                                    5                                  0.08
+Weak/tired/lethargy                                      4                                  0.06
+Numbness                                                 2                                  0.03
+ 123
+
+Cult Med Psychiatry (2018) 42:684–703                                                  697
+Discussion
+This study examined local idioms of mental suffering to inform the development of
+an emic screening tool for mental distress. Through qualitative interviews, focus-
+group discussions, pile sorts, and chart reviews, we arrived at a list of 28 unique and
+non-stigmatizing idioms of mental distress, along with 8 commonly expressed
+physical symptoms. We included 11 idioms and 6 physical symptoms in a final draft
+Liberian Distress Screener (LDS) to be pilot tested in public-sector primary care
+settings.
+    The majority of idioms (75%) fell into two distinct groupings relating to the heart
+and to the brain/mind, which suggests the centrality of these types of terms to
+articulate mental distress in rural Liberia. Other studies in various settings have
+uncovered idioms of mental suffering related to the heart and to the head/
+brain/mind. Among Darfurian refugees, mental distress idioms fell into two distinct
+categories, one of which was huzon, or ‘‘deep sadness’’, which was also called ‘‘pain
+in the heart’’ (Rasmussen et al. 2011). In Haiti, idioms predominantly referred to tét,
+meaning head, or ké, meaning heart, in Haitian Kreyol (Keys et al. 2012). A study of
+South Asian women in Britain similarly found the heart and heart-related terms as
+central to communicating emotional distress. In Nigeria, the term brain fag denotes
+an amalgamation of symptoms related to mental exhaustion (Prince 1985). In our
+study, mental health clinicians reinforced the importance of the heart to mental
+distress, saying that, in the clinic, patients are more likely to cite problems with their
+heart than their brain or mind, either because the heart is not associated with mental
+illness and is therefore less stigmatizing, or because the heart is easier to
+conceptualize than the brain or the mind, especially in the most remote parts of
+Liberia. In Nepal, Kohrt and Harper (2008) also found distinct heart-mind and
+brain-mind associated idioms, and identified brain-mind problems as particularly
+stigmatizing (Kohrt and Harper 2008). Similar patterns of heart/mind interactions
+are apparent elsewhere in sub-Saharan Africa. In Nigeria, explanatory models
+regarding the condition ode ori include strings connecting the brain to other parts of
+the body, including the heart. The symptoms of this condition include palpitations
+and other cardiac symptoms, illustrating the linkage between the heart and brain
+(Makanjuola 1987). Further research can reveal specific etiologic patterns within
+ethnopsychologies related to heart and mind/brain idioms to determine their least
+stigmatizing utilization in a clinical setting.
+    The remaining idioms fell into three smaller groupings: one comprised of terms
+related to fainting or losing consciousness, another of terms that represented
+conditions or emotional states resulting from various other idioms, including heart
+and mind/brain idioms, and one separate term that was not well understood. The
+applicability of these terms in the identification and treatment of mental distress in a
+clinical context is perhaps less immediately useful, as these terms were mostly
+deemed ambiguous or stigmatizing, though an exploration of alternative explana-
+tory models could reveal their value in the overall Liberian ethnopsychology.
+    The most salient idiom in our context was frustration, which falls in the mind/
+brain cluster of idioms but represents an emotional state resulting from various other
+                                                                                123
+
+698                                                   Cult Med Psychiatry (2018) 42:684–703
+idioms in both the heart and the mind/brain categories. This idiom, while seemingly
+similar to the word ‘‘frustration’’ in other contexts, refers not to a passing sensation
+but to a state of being that is characterized by various other symptoms of distress.
+The chronicity of this condition is notable because idioms with a longer temporal
+aspect are thought, according to previous research, to be predictive of other
+expressions and manifestations of mental distress (Hinton and Lewis-Fernández
+2010). This is also evident in explanations about how having a ‘‘man heart’’ was
+linked to physical resilience to other idioms of distress, whereas having a ‘‘weak
+heart’’ predisposes one to frustration. This usage of frustration may be unique to the
+Liberian setting, and suggests an alternative explanatory model for mental distress
+that is reminiscent of similar findings in Sub-Saharan Africa.
+    Several explanatory models emerged linking idioms of mental distress to other
+pathologies that are not necessarily linked to mental distress in biomedical
+nosology. Respondents associated idioms of mental distress, especially those in the
+mind/brain category, as a precursor to psychoses and more severe mental illness if
+left untreated. This mirrors findings in mainland China, in which excessive thinking
+was perceived as a salient cause of schizophrenia; among the Khwe in South Africa,
+in which thinking a lot could lead to madness; in the Peruvian Andes, where the
+Quechua term pinsamientuwan, or worrying thoughts, can evolve into lukuyasca, or
+craziness; and in Haiti, where thinking too much was endorsed as leading to fou, or
+madness (Yang et al. 2010; den Hertog et al. 2016; Pedersen, Kienzler, and Gamarra
+2010; Kaiser et al. 2014). In this alternative explanatory model from the DSM and
+ICD, thinking too much is seen as a network of processes in which excessive
+negative rumination interacts with other psychopathological symptoms which can
+become progressively worse (Hinton et al. 2016). This aligns with non-Western
+alternative explanatory models that have been explored as alternatives to Western
+psychopathologies that see symptoms as indicative of underlying and measurable
+disease categories like PTSD, depression and anxiety. Network analysis sees
+symptoms or experiences of mental distress as clustered and interrelated, but not
+indicative of a latent condition (Borsboom and Cramer 2013). This interpretation
+creates the space for treatment of the symptom or network of symptoms as well as
+shifting the focus to holistic and community based-treatments that may not be
+grounded in Western biomedical treatment modalities.
+    Heart idioms were also referred to as precursors for illness, though these idioms
+were more commonly associated with physical illness. Respondents linked heart cut
+and other heart idioms to sickness and pressure, which shares many symptoms with
+hypertension and can lead to death. Similar connections exist in other settings,
+including among Punjabis living in Britain, where a sinking heart can lead to heart
+attacks, and among women in northern India, where tension is associated with high
+blood pressure and diabetes (Krause 1989; Weaver 2017). Physical somatizations of
+mental distress in other settings have been documented to play an important role in
+the expression of mental distress, and so the idiom pressure is important to note for
+its utility as an expression of both mental distress and physical symptoms (Kirmayer
+2001). This idiom could also be a representation of the evolution of distress idioms
+over time, whereas what was formerly an expression of mental distress has been
+ 123
+
+Cult Med Psychiatry (2018) 42:684–703                                                   699
+increasingly associated with high blood pressure since the introduction of
+biomedical models of illness.
+   The second most salient idiom, thinking too much, aligned with findings in
+various settings worldwide. A recent systematic review identified 138 instances of
+this idiom in published literature related to communicating mental distress, though
+importantly, the interpretation varied widely and was not intended to be indicative
+of a universal condition devoid of nuance across cultures (Kaiser et al. 2015a).
+Similar to Kaiser et al.’s findings, thinking too much in the Liberian context was not
+considered stigmatizing, unlike many of the other mind/brain-related terms. While
+this idiom fell into the mind/brain category in our analysis, it is still indicative of the
+close association of mind/brain terms to heart related terms, which is evidenced by
+the respondent who referred to thinking too much in the heart. Similarly, kufungisisa
+in Zambia and South Africa, which translates to ‘‘thinking too much’’, was said to
+cause pain and physical pressure on the heart (Patel, Simunyu, and Gwanzura 1995).
+This idiom, for this reason, may not follow a specific DSM or ICD psychiatric
+construct, but nonetheless remains important in the articulation of mental distress.
+   The screening tool itself resembles screeners from other settings, including the
+Afghan Symptom Checklist and the Kreyol Distress Idioms in that it is comprised
+entirely of emic terms (Kaiser et al. 2013; Miller et al. 2006). Other tools, including
+the Shona Symptom Questionnaire and subsequent works, combine emic concepts
+and etic translations and have also been shown to have high reliability and internal
+consistency (Patel et al. 1997). One unique aspect of our screener is our inclusion of
+physical symptoms as a category separate from idioms of distress, though there was
+one term (heart cut) that was identified as a salient idiom and used to describe a
+physical symptom. The somatization of mental distress is common in many settings,
+especially where expressing overt mental distress may be less culturally acceptable,
+and was shown in our chart reviews to play an important role in the expression of
+mental distress in a clinical setting (Tylee and Gandhi 2005; Kirmayer 2001). Next
+steps are to refine and validate a formal screening tool by performing a quantitative
+analysis to test for the applicability and consistency of terms within the Liberian
+population. It’s important to note, however, that the screener developed in this study
+is a preliminary version meant to catalogue and document salient distress idioms in
+rural Liberia. It provides the basis for the creation of a framework that builds mental
+healthcare from an informed and culturally resonant perspective.
+Limitations
+The generalizability of our research was somewhat limited by geographical
+constraints. Lack of funding limited the geographic scope of the project to Maryland
+County, and thus the idioms of distress uncovered in this context may not be
+universal across Liberia. The interplay of culture and language changes over time,
+so a true understanding of communication of mental distress requires a continually
+updated recognition of linguistic nuances. Furthermore, non-English speakers were
+excluded, contributing to a lack of exploration of idioms within local dialects. Last,
+the nature of our study still approached our research question from a somewhat
+biomedical standpoint. Our aim was to work with the Liberian Ministry of Health
+                                                                                123
+
+700                                                              Cult Med Psychiatry (2018) 42:684–703
+and Partners In Health to improve screening and treatment for common mental
+disorders as they are engaged in building community-based mental healthcare.
+Other research goes a step further and first identifies what community members
+perceive as the most salient problems that cause mental distress in their setting
+before cataloguing the articulation of distress. Our model started from the inherent
+assumption that the distress about which we were asking is indeed seen as a problem
+in this setting, and we strove to balance emic mental health research with the
+existing goals for service provision, which include the integration of valid and
+effective screening mechanisms into primary care.
+Conclusion
+Understanding idioms of distress and communication surrounding mental suffering
+is essential for building culturally resonant mental healthcare. Liberian idioms of
+distress present several commonalities with mental health research in other settings,
+suggesting the universality of aspects of the experience of mental suffering.
+Important key differences, however, such as the salience of frustration in mental
+health discourse and the interpretation of mind/brain and heart idioms and
+interactions, reinforce the need for exploration of the variations of mental health
+communication cross-culturally. Research and interventions that prioritize building
+mental health programming from the grassroots by giving voice to local explanatory
+models, communication strategies, and pathways to care can better serve the
+communities in which they function.
+Funding The study was supported by Partners in Health, Liberia. BHW was supported by Grant Number
+K01MH110599 from the U.S. National Institute of Mental Health. The content is solely the responsibility
+of the authors and does not necessarily represent the official views of the National Institutes of Health.
+Compliance with Ethical Standards
+Conflict of interest The authors report no conflict of interest.
+References
+Abramowitz, Sharon Alane
+  2010 Trauma and Humanitarian Translation in Liberia: The Tale of Open Mole. Culture, Medicine,
+         and Psychiatry 34(2):353–379. https://doi.org/10.1007/s11013-010-9172-0.
+Bernard, H. Russell, and Gery W. Ryan
+  2010 Analyzing Qualitative Data. Thousand Oaks, CA: SAGE Publications Inc.
+Borgatti, Steve
+  1996 Anthropac 4.983 Natick, MA: Analytic Technologies.
+Borsboom, Denny, and Angélique O.J. Cramer
+  2013 Network Analysis: An Integrative Approach to the Structure of Psychopathology. Annual Review
+         of Clinical Psychology 9:91–121. https://doi.org/10.1146/annurev-clinpsy-050212-185608.
+Centers for Disease Control
+  2016 2014 Ebola Outbreak in West Africa—Case Counts. https://www.cdc.gov/vhf/ebola/outbreaks/
+        2014-west-africa/case-counts.html.
+ 123
+
+Cult Med Psychiatry (2018) 42:684–703                                                              701
+de Jong, Joop T., and Ria Reis
+  2010 Kiyang-Yang, a West-Africa Postwar Idiom of Distress. Culture, Medicine, and Psychiatry
+         34(2):301–321. https://doi.org/10.1007/s11013-010-9178-7.
+den Hertog, T.N., M. de Jong, A.J. van der Ham, D. Hinton, and R. Reis
+  2016 ‘‘Thinking a Lot’’ Among the Khwe of South Africa: A Key Idiom of Personal and Interpersonal
+         Distress. Culture, Medicine and Psychiatry 40(3):383–403. https://doi.org/10.1007/s11013-015-
+         9475-2.
+Esan, Oluyomi, Jibril Abdumalik, Julian Eaton, Lola Kola, Woye Fadahunsi, and Oye Gureje
+  2014 Global Mental Health Reforms: Mental Health Care in Anglophone West Africa. Psychiatric
+         Services 65(9):1084–1087. https://doi.org/10.1176/appi.ps.201300300.
+Evans, David K., Markus Goldstein, and Anna Popova
+  2015 Health-Care Worker Mortality and the Legacy of the Ebola Epidemic. The Lancet Global Health.
+         https://doi.org/10.1016/s2214-109x(15)00065-0.
+Government of the Republic of Liberia
+  2008 2008 National Population and Housing Census Preliminary Results. Monrovia. http://www.
+        emansion.gov.lr/doc/census_2008provisionalresults.pdf.
+Gwaikolo, Wilfred S., Brandon A. Kohrt, and Janice L. Cooper
+  2017 Health System Preparedness for Integration of Mental Health Services in Rural Liberia. BMC
+         Health Services Research 17(2):508. https://doi.org/10.1186/s12913-017-2447-1.
+Haroz, E.E., M. Ritchey, J.K. Bass, B.A. Kohrt, J. Augustinavicius, L. Michalopoulos, M.D. Burkey, and
+P. Bolton
+  2017 How is Depression Experienced Around the World? A Systematic Review of Qualitative
+         Literature. Social Science and Medicine 183:151–162. https://doi.org/10.1016/
+         j.socscimed.2016.12.030.
+Hinton, D.E., and R. Lewis-Fernández
+  2010 Idioms of Distress among Trauma Survivors: Subtypes and Clinical Utility. Culture, Medicine,
+         and Psychiatry 34(2):209–218.
+Hinton, Devon E., Vuth Pich, Luana Marques, Angela Nickerson, and Mark H. Pollack
+  2010 Khyâl Attacks: A Key Idiom of Distress Among Traumatized Cambodia Refugees. Culture,
+         Medicine, and Psychiatry 34(2):244–278. https://doi.org/10.1007/s11013-010-9174-y.
+Hinton, Devon E., M. Alexandra Kredlow, Eric Bui, and Stefan G. Hofmann
+  2013 The Relationship of PTSD to Key Somatic Complaints and Cultural Syndromes among
+         Cambodian Refugees Attending a Psychiatric Clinic: The Cambodian Somatic Symptom and
+         Syndrome Inventory (CSSI). Transcultural Psychiatry 50(3):347–370. https://doi.org/10.1177/
+         1363461513481187.
+Hinton, D.E., D.H. Barlow, R. Reis, and J. de Jong
+  2016 A Transcultural Model of the Centrality of ‘‘Thinking a Lot’’ in Psychopathologies Across the
+         Globe and the Process of Localization: A Cambodian Refugee Example. Culture, Medicine, and
+         Psychiatry 40(4):570–619.
+Johnson, Kirsten, Jana Asher, Stephanie Rosborough, Amisha Raja, Rajesh Panjabi, Charles Beadling,
+and Lynn Lawry
+  2008 Association of Combatant Status and Sexual Violence With Health and Mental Health Outcomes
+         in Postconflict Liberia. JAMA 300(6):676. https://doi.org/10.1001/jama.300.6.676.
+Kaiser, Bonnie N., Brandon A. Kohrt, Hunter M. Keys, Nayla M. Khoury, and Aimée-Rika T. Brewster
+  2013 Strategies for Assessing Mental Health in Haiti: Local Instrument Development and Transcul-
+         tural Translation. Transcultural Psychiatry 50(4):532–558. https://doi.org/10.1177/
+         1363461513502697.
+Kaiser, Bonnie N., Kristen E. McLean, Brandon A. Kohrt, Ashley K. Hagaman, Bradley H. Wagenaar,
+Nayla M. Khoury, and Hunter M. Keys
+  2014 Reflechi twòp—Thinking Too Much: Description of a Cultural Syndrome in Haiti’s Central
+         Plateau. Culture, Medicine, and Psychiatry 38(3):448–472. https://doi.org/10.1007/s11013-014-
+         9380-0.
+Kaiser, Bonnie N., Emily E. Haroz, Brandon A. Kohrt, Paul A. Bolton, Judith K. Bass, and Devon E.
+  Hinton
+  2015a ‘‘Thinking Too Much’’: A Systematic Review of a Common Idiom of Distress.’’ Social Science
+         and Medicine (1982) 147:170–83. https://doi.org/10.1016/j.socscimed.2015.10.044.
+Kaiser, Bonnie N., Brandon A. Kohrt, Bradley H. Wagenaar, Michael R. Kramer, Kristen E. McLean,
+  Ashley K. Hagaman, Nayla M. Khoury, and Hunter M. Keys
+                                                                                           123
+
+702                                                               Cult Med Psychiatry (2018) 42:684–703
+ 2015b ‘‘Scale Properties of the Kreyòl Distress Idioms (KDI) Screener: Association of an
+           Ethnographically-Developed Instrument with Depression, Anxiety, and Sociocultural Risk
+           Factors in Rural Haiti.’’ International Journal of Culture and Mental Health 8(4):341–58.
+           https://doi.org/10.1080/17542863.2015.1015580.
+Keys, Hunter M., Bonnie N. Kaiser, Brandon A. Kohrt, Nayla M. Khoury, and Aimée Rika T. Brewster
+ 2012 Idioms of Distress, Ethnopsychology, and the Clinical Encounter in Haiti’s Central Plateau.
+         Social Science and Medicine 75(3):555–564. https://doi.org/10.1016/j.socscimed.2012.03.040.
+Khoury, Nayla M., Bonnie N. Kaiser, Hunter M. Keys, Aimee Rika T. Brewster, and Brandon A. Kohrt
+ 2012 Explanatory Models and Mental Health Treatment: Is Vodou an Obstacle to Psychiatric
+         Treatment in Rural Haiti?. Culture, Medicine and Psychiatry 36(3):514–534. https://doi.org/
+         10.1007/s11013-012-9270-2.
+Kirmayer, L.J.
+ 2001 Cultural Variations in the Clinical Presentation of Depression and Anxiety: Implications for
+         Diagnosis and Treatment. The Journal of Clinical Psychiatry 62(Suppl 13):22–30.
+Kleinman, Arthur
+ 1987 Anthropology and Psychiatry: The Role of Culture in Cross-Cultural Research on Illness. British
+         Journal of Psychiatry 151:447–454.
+Kohrt, Brandon A., and Ian Harper
+ 2008 Navigating Diagnoses: Understanding Mind-Body Relations, Mental Health, and Stigma in
+         Nepal. Culture, Medicine and Psychiatry 32(4):462–491. https://doi.org/10.1007/s11013-008-
+         9110-6.
+Kohrt, Brandon A., and Daniel J. Hruschka
+ 2010 Nepali Concepts of Psychological Trauma: The Role of Idioms of Distress, Ethnopsychology and
+         Ethnophysiology in Alleviating Suffering and Preventing Stigma. Culture, Medicine and
+         Psychiatry 34(2):322–352. https://doi.org/10.1007/s11013-010-9170-2.
+Kohrt, Brandon A., Mark J.D. Jordans, Wietse A. Tol, Nagendra P. Luitel, Sujen M. Maharjan, and
+Nawaraj Upadhaya
+ 2011 Validation of Cross-Cultural Child Mental Health and Psychosocial Research Instruments:
+         Adapting the Depression Self-Rating Scale and Child PTSD Symptom Scale in Nepal. BMC
+         Psychiatry 11(1):127. https://doi.org/10.1186/1471-244x-11-127.
+Krause, Inga-Britt
+ 1989 Sinking Heart: A Punjab Communication Of Distress. Social Science and Medicine 29(4):
+        563–575.            https://ac-els-cdn-com.offcampus.lib.washington.edu/0277953689902025/1-s2.0-
+        0277953689902025-main.pdf?_tid=b6df5792-bf2c-11e7-900a-00000aab0f01&acdnat=
+        1509558622_0778077cb8d6bec2e6f22c77e51190ee.
+Makanjuola, R.A.O.
+ 1987 ‘Ode Ori’: A Culture-Bound Disorder with Prominent Somatic Features in Yoruba Nigerian
+         Patients. Acta Psychiatrica Scandinavica 75:231–236.
+Miller, Kenneth E., P. Omidian, A.S. Quraishy, N. Quraishy, M.N. Nasiry, S. Nasiry, N.M. Karyar, and
+A.A. Yaqubi
+ 2006 The Afghan Symptom Checklist: A Culturally Grounded Approach to Mental Health Assessment
+         in a Conflict Zone. American Journal of Orthopsychiatry 76(4):423–433. https://doi.org/10.1037/
+         0002-9432.76.4.423.
+Mogensen, H.O.
+ 2000 False Teeth and Real Suffering: The Social Course of ‘Germectomy’ in Eastern Uganda. Culture,
+         Medicine, and Psychiatry 24:331–351.
+Ola, B.A., and D.O. Igbokwe
+ 2011 Factoral Validation and Reliability Analysis of the Brain Fag Syndrome Scale. African Health
+         Science 11(3):334–340.
+Patel, V., E. Simunyu, and F. Gwanzura
+ 1995 Kufungisisa (Thinking Too Much): A Shona Idiom for Non-Psychotic Mental Illness. Central
+         African Journal of Medicine 41(7):209–215.
+Patel, V., E. Simunyu, F. Gwanzura, G. Lewis, and A. Mann
+ 1997 The Shona Symptom Questionnaire: The Development of an Indigenous Measure of Common
+         Mental Disorders in Harare. Acta Psychiatrica Scandinavica 95:469–475. https://doi.org/
+         10.1111/j.1600-0447.1997.tb10134.x.
+123
+
+Cult Med Psychiatry (2018) 42:684–703                                                               703
+Pedersen, Duncan, Hanna Kienzler, and Jeffrey Gamarra
+  2010 Llaki and Ñakary: Idioms of Distress and Suffering Among the Highland Quechua in the
+         Peruvian Andes. Culture, Medicine, and Psychiatry 34(2):279–300. https://doi.org/10.1007/
+         s11013-010-9173-z.
+Prince, Raymond
+  1985 The Concept of Culture-Bound Syndromes: Anorexia Nervosa and Brain-Fag. Social Science
+         and Medicine 21(2):197–203.
+Quarshie, Anu
+  2006 Emotions, Somatization and Psychaitric Symptoms Among the Akan. Studia Orientalia 103:131–
+         145.
+Rasmussen, Andrew, Eddy Eustache, Giuseppe Raviola, Bonnie Kaiser, David J. Grelotti, and Gary S.
+Belkin
+  2015 Development and Validation of a Haitian Creole Screening Instrument for Depression.
+         Transcultural Psychiatry 52(1):33–57. https://doi.org/10.1177/1363461514543546.
+Rasmussen, Andrew, Basila Katoni, Allen S. Keller, and John Wilkinson
+  2011 Posttraumatic Idioms of Distress Among Darfur Refugees: Hozun and Majnun. Transcultural
+         Psychiatry 48(4):392–415. https://doi.org/10.1177/1363461511409283.
+Summerfield, Derek
+  2008 How Scientifically Valid Is the Knowledge Base of Global Mental Health?. BMJ (Clinical
+         Research Ed.) 336(7651):992–994. https://doi.org/10.1136/bmj.39513.441030.ad.
+Summerfield, Derek
+  2012 ‘‘Afterword: Against global Mental Health’’ The Western Mental Health Field in Western
+        Countries. Transcultural Psychiatry 49:3–4. https://doi.org/10.1177/1363461512454701.
+Sweetland, Annika C., Gary S. Belkin, and Helena Verdeli
+  2014 Measuring Depression and Anxiety in Sub-Saharan Africa. Depression and Anxiety 31(3):223–
+         232. https://doi.org/10.1002/da.22142.
+Tylee, André, and Paul Gandhi
+  2005 The Importance of Somatic Symptoms in Depression in Primary Care. Primary Care Companion
+         to the Journal of Clinical Psychiatry 7(4):167–176.
+Weaver, Lesley Jo
+  2017 Tension Among Women in North India: An Idiom of Distress and a Cultural Syndrome. Culture,
+         Medicine, and Psychiatry 41(1):35–55. https://doi.org/10.1007/s11013-016-9516-5.
+World Health Organization 2011 Mental Health Atlas: Liberia. Geneva. http://www.who.int/mental_
+  health/evidence/atlas/profiles/lbr_mh_profile.pdf?ua=1.
+Yang, Lawrence H., Michael R. Phillips, Graciete Lo, Yuwen Chou, Xiaoli Zhang, and Kim Hopper
+  2010 Excessive Thinking’’; as Explanatory Model for Schizophrenia: Impacts on Stigma and Moral
+         Status in Mainland China. Schizophrenia Bulletin 36(4):836–845. https://doi.org/10.1093/schbul/
+         sbn180.
+                                                                                            123
+
