@@ -64,17 +64,19 @@ This script requires the use of txt files. If you have documents in pdf format r
 install.packages("pdftools")
 library(pdftools)
 
-
+#creates variable called file.names that builds path to the pdfs 
 file.names <- dir(path="pdfs", pattern =".pdf", full.names=TRUE)
 
-
+#this forloop converts the pdfs to text
 for (file in file.names) {
   text <- pdf_text(file)
 
-  
+  #gsub replaces all matches of "pdf" and returns a string vector of "txt"
   output.file <- gsub("pdf", "txt",file)
+  #print argument returns a visiable output
   print(output.file)
   print(file)
+  #write the data to a file
   write(text, output.file)
 }
 
