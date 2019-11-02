@@ -5,8 +5,6 @@ This repository was created as part of the Digital Humanities unit within Master
 
 This PoC is a lightweight and easy-to-use tool for analysing qualitative data in R. This repository provides instructions and an installation script for running this tool in R. This tool can be used for any textual data, such as: interview transcripts, fieldwork notes, and primary documents.
 
-Go follow the instructions at https://www.r-project.org if you need to install R. 
-
 This R script uses the qcoder package at https://github.com/ropenscilabs/qcoder. 
 
 
@@ -34,21 +32,33 @@ I then used R to:
 
 
 # Setup
-In order for this tool to work you need to download the pdf-to-txt folder and the qcoder_analysis folder and save them to your Desktop. 
+In order for this tool to work you need to download the proof-of-concept repository and save it to your Desktop. 
 
 # Installation 
+Go follow the instructions at https://www.r-project.org if you need to install R. 
+
+Alternatively, you can run the following command in OSX Mac terminal:
+```xcode-select --install
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Homebrew PATH
+echo "export LC_ALL=en_US.UTF-8" >> ~/.bash_profile
+echo "export LANG=en_US.UTF-8" >> ~/.bash_profile
+echo "export PATH=/usr/local/bin:$PATH" >> ~/.bash_profile && source ~/.bash_profile
+
+brew install r
+echo 'Sys.setlocale(category="LC_ALL", locale = "en_US.UTF-8")' >> ~/.bash_profile
+
+brew install openblas
+brew install r --with-openblas
+echo 'Sys.setlocale(category="LC_ALL", locale = "en_US.UTF-8")' >> ~/.bash_profile
+
+brew cask install rstudio
+```
 
 
 ## Pdf to Text 
-This script requires the use of txt files. If you have documents in pdf format run the following script in OSX terminal:
-
-```
-cd ~/Desktop/pdf-to-text
-#!/bin/bash
-Rscript forloop.R
-```
-
-Alternatively, you can run the following script directly in RStudio: 
+This script requires the use of txt files. If you have documents in pdf format run the following script in RStudio:
 
 ```Rscript
 install.packages("pdftools")
@@ -114,7 +124,7 @@ datafiles <- dir(rawPath, "*.txt", ignore.case = TRUE, all.files = TRUE)
 file.copy(file.path(rawPath, datafiles), file_path, overwrite = TRUE)
 ```
 
-
+To read the data and codes into the system, run:
 ```Rscript 
 #read_documents_data(project_name = project_name)
 #This line proves the data is "in" the system
