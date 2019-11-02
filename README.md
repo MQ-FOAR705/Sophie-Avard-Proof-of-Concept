@@ -14,6 +14,7 @@ This R script uses the qcoder package at https://github.com/ropenscilabs/qcoder.
 - [Outline of the project](#outline)
 - [Setup](#setup)
 - [Installation](#installation)
+- [Results](#results)
 - [Issues](#issues)
 - [Features](#features)
 - [FAQ](#faq)
@@ -39,7 +40,7 @@ In order for this tool to work you need to download the pdf-to-txt folder and th
 
 
 ## Pdf to Text 
-This R script requires the use of txt files. If you have documents in pdf format run the following script in OSX terminal:
+This script requires the use of txt files. If you have documents in pdf format run the following script in OSX terminal:
 
 ```
 cd ~/Desktop/pdf-to-text
@@ -80,34 +81,48 @@ library(qcoder)
 ```
 
 ## Importing data
-To import the data into Qcode, run: 
+To import the data into Qcoder, run: 
 ```Rscript
 #locate the working directory
+#make sure working directory is qcoder_analysis
 getwd()
-#use create_qcoder_project to create a new project
-#create_qcoder_project("my_project")
-import_project_data(project = "my_project")
+#use following line to create a new project
+#create_qcoder_project("qcoder-analysis-project")
+#import project data
+import_project_data(project = "qcoder-analysis-project")
 ```
 
+To build the paths to the data to be importated and to the data frame where the imported data is to be stored, run: 
 ```Rscript
-#assign value to a variable
-project_name = "my_project"
+project_name = "qcoder-analysis-project"
 file_name <- "Fabian_2018.txt"
-docs_df_path <-"my_project/data_frames/qcoder_documents_my_project.rds"
-codes_df_path <- "my_project/data_frames/qcoder_codes_my_project.rds"
-file_path <- "my_project/documents"
-dir("my_project/documents")
+#creates a path to the data
+docs_df_path <-"qcoder-analysis-project/data_frames/qcoder_documents_qcoder-analysis-project.rds"
+#creates a path to the codes
+codes_df_path <- "qcoder-analysis-project/data_frames/qcoder_codes_qcoder-analysis-project.rds"
+file_path <- "qcoder-analysis-project/documents"
+dir("qcoder-analysis-project/documents")
 ```
 
+To create a path to the 'txts' folder and copy the txts to the qcoder_analysis directoy, run:
+```Rscript
+#create path to diretory
+rawPath <- "/Users/sophieavard/Desktop/pdf-to-text/txts"
+#create path to txt files within directory
+datafiles <- dir(rawPath, "*.txt", ignore.case = TRUE, all.files = TRUE)
+#copy txt files into qcoder_analysis directory
+file.copy(file.path(rawPath, datafiles), file_path, overwrite = TRUE)
+```
+
+
 ```Rscript 
-read_documents_data(project_name = project_name)
-#This proves the data is "in" the system
+#read_documents_data(project_name = project_name)
+#This line proves the data is "in" the system
 new_dataframe <- readRDS(docs_df_path)
-```
-
-```Rscript 
+#This line reads the codes 
 read_code_data(project_name = project_name)
 codes_dataframe <- readRDS(codes_df_path)
+#This line opens qcoder and sets the qcoder-analysis-project as the directory
 qcode(use_wd=TRUE)
 ```
 
@@ -123,9 +138,10 @@ When you are finished with coding the documents click ```save changes``` button.
 
 Instructions on how to code data using qcoder can be found at https://github.com/ropenscilabs/qcoder. 
 
-**Known Issues** 
+For the purposes of this PoC I have provided an example of coded data in the [Results](#results) section. 
 
-Please refer to [Issues](#issues) section for bug in saving coded data. 
+# Results
+
 
 # Issues
 At this stage, the Qcoder application does not save coded data when the R session ends. This is due to a bug in the Qcoder package that is out of my control. As such, data must be coded and extracted within a single session. This is a work in progress and is a high priority development item. 
