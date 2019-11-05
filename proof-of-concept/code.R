@@ -40,15 +40,9 @@ dir("qcoder-analysis-project/documents")
 #create path to diretory
 #create path to txt files within directory
 #copy txt files into qcoder_analysis directory
-rawPath <- "/Users/sophieavard/Desktop/proof-of-concept/txts"
+rawPath <- "/Users/sophieavard/Desktop/Sophie-Avard-Proof-of-Concept/proof-of-concept/txts"
 datafiles <- dir(rawPath, "*.txt", ignore.case = TRUE, all.files = TRUE)
 file.copy(file.path(rawPath, datafiles), file_path, overwrite = TRUE)
-
-
-# TODO Make a for loop ala the pdf -> txt to add *all* documents
-# add_new_documents(file_name,
-#                   docs_df_path,
-#                   file_path)
 
 #read_documents_data(project_name = qcoder-analysis-project)
 
