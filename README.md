@@ -32,7 +32,9 @@ I then used R to:
 
 
 # Setup
-In order for this tool to work you need to download the proof-of-concept repository and save it to your Desktop. 
+In order for this tool to work you need to download the proof-of-concept source file and save it to your Desktop. You then need to download the zip file to run the analysis. 
+
+In RStudio, you need to set your working directory.
 
 # Installation 
 Go follow the instructions at https://www.r-project.org if you need to install R. 
@@ -56,14 +58,21 @@ echo 'Sys.setlocale(category="LC_ALL", locale = "en_US.UTF-8")' >> ~/.bash_profi
 brew cask install rstudio
 ```
 
-
-## Pdf to Text 
-This script requires the use of txt files. If you have documents in pdf format run the following script in RStudio:
+To install the latest development version of the required packages, run:
 
 ```Rscript
 install.packages("pdftools")
 library(pdftools)
 
+install.packages("devtools")
+devtools::install_github("ropenscilabs/qcoder")
+library(qcoder)
+```
+
+## Pdf to Text 
+This script requires the use of txt files. If you have documents in pdf format run the following script in RStudio:
+
+```Rscript
 #creates variable called file.names that builds path to the pdfs 
 file.names <- dir(path="pdfs", pattern =".pdf", full.names=TRUE)
 
@@ -81,16 +90,7 @@ for (file in file.names) {
 }
 
 ```
-
 Once you have converted your pdfs to txt files you are ready for the next step!
-
-## Qcoder Analysis 
-To install the latest development version, run:
-```Rscript
-install.packages("devtools")
-devtools::install_github("ropenscilabs/qcoder")
-library(qcoder)
-```
 
 ## Importing data
 To import the data into Qcoder, run: 
@@ -116,7 +116,7 @@ file_path <- "qcoder-analysis-project/documents"
 dir("qcoder-analysis-project/documents")
 ```
 
-To create a path to the 'txts' folder and copy the txts to the qcoder_analysis directoy, run:
+To create a path to the 'txts' folder and copy the txts to the qcoder_analysis directory, run:
 ```Rscript
 #create path to diretory
 rawPath <- "/Users/sophieavard/Desktop/pdf-to-text/txts"
