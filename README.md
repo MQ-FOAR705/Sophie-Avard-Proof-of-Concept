@@ -14,8 +14,7 @@ This R script uses the qcoder package at https://github.com/ropenscilabs/qcoder.
 - [Installation](#installation)
 - [Results](#results)
 - [Issues](#issues)
-- [Features](#features)
-- [FAQ](#faq)
+- [Future Direction](#futuredirection)
 - [License](#license)
 
 # Outline
@@ -32,11 +31,11 @@ I then used R to:
 
 
 # Setup
-In order for this tool to work you need to download the proof-of-concept source file and save it to your Desktop. You then need to download the zip file to run the analysis. 
+In order for this tool to work you need to download the [proof-of-concept zip file](proof-of-concept.zip), unzip it and save it to your Desktop. Follow the instruction in this README to run the R script, for a more detailed description of the script, download the POC-notebook.
 
-In RStudio, you need to set your working directory.
+Prior to running the script, you need to set your working directory to the proof-of-concept directory in RStudio.
 
-# Installation 
+# Installation
 Go follow the instructions at https://www.r-project.org if you need to install R. 
 
 Alternatively, you can run the following command in OSX Mac terminal:
@@ -57,20 +56,36 @@ echo 'Sys.setlocale(category="LC_ALL", locale = "en_US.UTF-8")' >> ~/.bash_profi
 
 brew cask install rstudio
 ```
+## Set working directory
+In order for this PoC to work, users must set their working directory to the proof-of-concept directory (this should have been saved on the Desktop during [Setup](#setup). To set your working directory, run the following script: 
 
+```Rscript
+#set wd to $HOME/path/to/proof-of-concept
+setwd($HOME/Desktop/proof-of-concept)
+```
+NOTE: '$HOME' should be replaced with the users home directory. For example, 
+```Rscript 
+setwd(Users/sophieavard/Desktop/proof-of-concept)
+```
+
+## Install packages
 To install the latest development version of the required packages, run:
 
 ```Rscript
-install.packages("pdftools")
+#packages for pdf to txt
+install.packages('plyr', repos = "http://cran.us.r-project.org")
+install.packages("pdftools", repos = "http://cran.us.r-project.org")
 library(pdftools)
 
-install.packages("devtools")
+#packages for textual analysis
+install.packages("devtools", repos = "http://cran.us.r-project.org")
 devtools::install_github("ropenscilabs/qcoder")
 library(qcoder)
+
 ```
 
 ## Pdf to Text 
-This script requires the use of txt files. If you have documents in pdf format run the following script in RStudio:
+As the textual analysis requires the use of txt files, users need to convert pdfdocuments into txt. To do this, run the following script in RStudio:
 
 ```Rscript
 #creates variable called file.names that builds path to the pdfs 
@@ -90,21 +105,29 @@ for (file in file.names) {
 }
 
 ```
-Once you have converted your pdfs to txt files you are ready for the next step!
+Once you have have run this script, check the 'txts' folder in the proof-of-concept directory to make sure that the converted files are there.
+
+![txt files in directory](https://github.com/MQ-FOAR705/Sophie-Avard-Proof-of-Concept/blob/master/images/txt-files.png )
+
 
 ## Importing data
-To import the data into Qcoder, run: 
-```Rscript
-#locate the working directory
-#make sure working directory is qcoder_analysis
+Firstly, ensure that your working directory is proof-of-concept:
+
+```Rscript 
 getwd()
-#use following line to create a new project
-#create_qcoder_project("qcoder-analysis-project")
-#import project data
+```
+
+For the purposes of this project the user will be using a project that has already been created. For future references, if you want to create an empty project, run:
+```Rscript
+create_qcoder_project("insert-peroject-name-here")
+```
+
+To import the data proof-of-concept data into Qcoder, run: 
+```Rscript
 import_project_data(project = "qcoder-analysis-project")
 ```
 
-To build the paths to the data to be importated and to the data frame where the imported data is to be stored, run: 
+To build the paths to the data to be importated and to the dataframes where the imported data is to be stored, run: 
 ```Rscript
 project_name = "qcoder-analysis-project"
 file_name <- "Fabian_2018.txt"
@@ -116,51 +139,64 @@ file_path <- "qcoder-analysis-project/documents"
 dir("qcoder-analysis-project/documents")
 ```
 
-To create a path to the 'txts' folder and copy the txts to the qcoder_analysis directory, run:
+Now the user needs to copy the files in 'txts' and place them in the 'documents' folder within the qcoder_analysis_project. To do this, run:
 ```Rscript
-#create path to diretory
-rawPath <- "/Users/sophieavard/Desktop/pdf-to-text/txts"
-#create path to txt files within directory
+rawPath <- "~/Desktop/proof-of-concept/txts"
 datafiles <- dir(rawPath, "*.txt", ignore.case = TRUE, all.files = TRUE)
-#copy txt files into qcoder_analysis directory
 file.copy(file.path(rawPath, datafiles), file_path, overwrite = TRUE)
 ```
+Check the 'documents' folder in the qcoder_analysis_project to make sure that the text files have been copied into the folder.
 
 To read the data and codes into the system, run:
 ```Rscript 
-#read_documents_data(project_name = project_name)
-#This line proves the data is "in" the system
 new_dataframe <- readRDS(docs_df_path)
-#This line reads the codes 
 read_code_data(project_name = project_name)
 codes_dataframe <- readRDS(codes_df_path)
-#This line opens qcoder and sets the qcoder-analysis-project as the directory
+```
+Lastly, to open the qcoder analysis, run:
+```Rscript
 qcode(use_wd=TRUE)
 ```
 
+Please note, a breakdown of this R script and its function is located in the POC-Notebook.
+
 ## Coding the data 
-Using a tagging system, codes can be assigned to text in two ways:
+For the purposes of this PoC, I have provided examples of how I coded the two txt files in the proof-of-concept directory. Using the Shiny app, codes can be assigned to text in two ways:
+
 1. Surround the text to be coded with (QCODE)(/QCODE){#tag}. For example: 
 
 ```(QCODE)This text will be assigned a tag labelled 'example'.(/QCODE){#example}```
 
-2. To use an existing code, highlight the text to be assigned a code, select the code, click ```add selected code```
+2. To use an existing code (see example below), highlight the text to be assigned a code, select the code, click ```add selected code```
 
 When you are finished with coding the documents click ```save changes``` button.
 
-Instructions on how to code data using qcoder can be found at https://github.com/ropenscilabs/qcoder. 
+Here is an example of the codes that were used to tag the files in this proof of concept. This must be a csv format and it must be saved in the 'codes' folder within the qcoder_analysis_project.
+![example codes](https://github.com/MQ-FOAR705/Sophie-Avard-Proof-of-Concept/blob/master/images/codes-template.png)
+
+Further instructions on how to code data using qcoder can be found at https://github.com/ropenscilabs/qcoder. 
 
 For the purposes of this PoC I have provided an example of coded data in the [Results](#results) section. 
 
 # Results
+This is an example of data that I have coded in the Shiny app: 
+![example highlighted data](https://github.com/MQ-FOAR705/Sophie-Avard-Proof-of-Concept/blob/master/images/highlighted-data.png)
 
+This is an example of the data that I exported as a csv format: 
+- doc: this is the value that users assign to each document 
+- qcode: this is the code of that particular segment of text
+- text: is the segment of text that has been coded
+![example csv file](https://github.com/MQ-FOAR705/Sophie-Avard-Proof-of-Concept/blob/master/images/coded-data.png)
 
 # Issues
 At this stage, the Qcoder application does not save coded data when the R session ends. This is due to a bug in the Qcoder package that is out of my control. As such, data must be coded and extracted within a single session. This is a work in progress and is a high priority development item. 
 
-# Features
+# Future direction
+1. I am currently working on being able to save and re-open qcoder sessions in R. 
+2. At this stage, the script cannot be run through terminal due to the ui and server of the shiny app. I am working towards being able to run the script through the terminal command ```Rscript qcoder.R```
+3. Shiny app 
+Create a shiny app 
 
-# FAQ
 
 # License
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
