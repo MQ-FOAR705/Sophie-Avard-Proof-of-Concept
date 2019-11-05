@@ -1749,54 +1749,39 @@ summary {
 
 
 <!-- rnb-text-begin -->
+<p>Below is a step-by-step guide on how to run the R script.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGlyKFwicHJvb2Ytb2YtY29uY2VwdFwiKVxuYGBgIn0= -->
-<pre class="r"><code>dir(&quot;proof-of-concept&quot;)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiY2hhcmFjdGVyKDApXG4ifQ== -->
-<pre><code>character(0)</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaW5zdGFsbC5wYWNrYWdlcygncGx5cicsIHJlcG9zID0gXCJodHRwOi8vY3Jhbi51cy5yLXByb2plY3Qub3JnXCIpXG5gYGAifQ== -->
-<pre class="r"><code>install.packages('plyr', repos = &quot;http://cran.us.r-project.org&quot;)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoidHJ5aW5nIFVSTCAnaHR0cDovL2NyYW4udXMuci1wcm9qZWN0Lm9yZy9iaW4vbWFjb3N4L2VsLWNhcGl0YW4vY29udHJpYi8zLjYvcGx5cl8xLjguNC50Z3onXG5Db250ZW50IHR5cGUgJ2FwcGxpY2F0aW9uL3gtZ3ppcCcgbGVuZ3RoIDk2NTk5MiBieXRlcyAoOTQzIEtCKVxuPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbmRvd25sb2FkZWQgOTQzIEtCXG4ifQ== -->
-<pre><code>trying URL 'http://cran.us.r-project.org/bin/macosx/el-capitan/contrib/3.6/plyr_1.8.4.tgz'
-Content type 'application/x-gzip' length 965992 bytes (943 KB)
-==================================================
-downloaded 943 KB</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5UaGUgZG93bmxvYWRlZCBiaW5hcnkgcGFja2FnZXMgYXJlIGluXG5cdC92YXIvZm9sZGVycy9kYy95bnA2bWd5ZDY3c183eWRra2g4bHJ5bHIwMDAwZ24vVC8vUnRtcGdvOWM1eS9kb3dubG9hZGVkX3BhY2thZ2VzXG4ifQ== -->
-<pre><code>
-The downloaded binary packages are in
-    /var/folders/dc/ynp6mgyd67s_7ydkkh8lrylr0000gn/T//Rtmpgo9c5y/downloaded_packages</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaW5zdGFsbC5wYWNrYWdlcyhcInBkZnRvb2xzXCIsIHJlcG9zID0gXCJodHRwOi8vY3Jhbi51cy5yLXByb2plY3Qub3JnXCIpXG5gYGAifQ== -->
-<pre class="r"><code>install.packages(&quot;pdftools&quot;, repos = &quot;http://cran.us.r-project.org&quot;)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoidHJ5aW5nIFVSTCAnaHR0cDovL2NyYW4udXMuci1wcm9qZWN0Lm9yZy9iaW4vbWFjb3N4L2VsLWNhcGl0YW4vY29udHJpYi8zLjYvcGRmdG9vbHNfMi4yLnRneidcbkNvbnRlbnQgdHlwZSAnYXBwbGljYXRpb24veC1nemlwJyBsZW5ndGggNjU5NzE2NSBieXRlcyAoNi4zIE1CKVxuPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cbmRvd25sb2FkZWQgNi4zIE1CXG4ifQ== -->
-<pre><code>trying URL 'http://cran.us.r-project.org/bin/macosx/el-capitan/contrib/3.6/pdftools_2.2.tgz'
-Content type 'application/x-gzip' length 6597165 bytes (6.3 MB)
-==================================================
-downloaded 6.3 MB</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5UaGUgZG93bmxvYWRlZCBiaW5hcnkgcGFja2FnZXMgYXJlIGluXG5cdC92YXIvZm9sZGVycy9kYy95bnA2bWd5ZDY3c183eWRra2g4bHJ5bHIwMDAwZ24vVC8vUnRtcGdvOWM1eS9kb3dubG9hZGVkX3BhY2thZ2VzXG4ifQ== -->
-<pre><code>
-The downloaded binary packages are in
-    /var/folders/dc/ynp6mgyd67s_7ydkkh8lrylr0000gn/T//Rtmpgo9c5y/downloaded_packages</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShwZGZ0b29scylcblxuYGBgIn0= -->
-<pre class="r"><code>library(pdftools)
-</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI3NldCB3b3JraW5nIGRpcmVjdG9yeSB0byAkSE9NRS9EZXNrdG9wL3Byb29mLW9mLWNvbmNlcHRcbiNkaXIoXCJwcm9vZi1vZi1jb25jZXB0XCIpXG5gYGAifQ== -->
+<pre class="r"><code>#set working directory to $HOME/Desktop/proof-of-concept
+#dir(&quot;proof-of-concept&quot;)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>You need to set your working directory to the proof-of-concept folder (which should be saved on your Desktop).</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaW5zdGFsbC5wYWNrYWdlcygncGx5cicsIHJlcG9zID0gXCJodHRwOi8vY3Jhbi51cy5yLXByb2plY3Qub3JnXCIpXG5pbnN0YWxsLnBhY2thZ2VzKFwicGRmdG9vbHNcIiwgcmVwb3MgPSBcImh0dHA6Ly9jcmFuLnVzLnItcHJvamVjdC5vcmdcIilcblxuaW5zdGFsbC5wYWNrYWdlcyhcImRldnRvb2xzXCIsIHJlcG9zID0gXCJodHRwOi8vY3Jhbi51cy5yLXByb2plY3Qub3JnXCIpXG5kZXZ0b29sczo6aW5zdGFsbF9naXRodWIoXCJyb3BlbnNjaWxhYnMvcWNvZGVyXCIpXG5cbmxpYnJhcnkocGRmdG9vbHMpXG5saWJyYXJ5KHFjb2RlcilcbmBgYCJ9 -->
+<pre class="r"><code>install.packages('plyr', repos = &quot;http://cran.us.r-project.org&quot;)
+install.packages(&quot;pdftools&quot;, repos = &quot;http://cran.us.r-project.org&quot;)
+
+install.packages(&quot;devtools&quot;, repos = &quot;http://cran.us.r-project.org&quot;)
+devtools::install_github(&quot;ropenscilabs/qcoder&quot;)
+
+library(pdftools)
+library(qcoder)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Install all of the packages needed for this proof of concept. The devtools package makes package development easier as it provides R functions that simplify common tasks. The last two lines of the script installs the textual analysis package ‘qcoder’.</p>
+<!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZS5uYW1lcyA8LSBkaXIocGF0aD1cInBkZnNcIiwgcGF0dGVybiA9XCIucGRmXCIsIGZ1bGwubmFtZXM9VFJVRSlcbmBgYCJ9 -->
 <pre class="r"><code>file.names &lt;- dir(path=&quot;pdfs&quot;, pattern =&quot;.pdf&quot;, full.names=TRUE)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>This creates a variable called file.names that builds a path to the pdfs that need to be converted into txt files. ‘Path=’ is the directory containing the files and ‘pattern=’ is the pattern of the files - in this case the files all end in “.pdf”. if full.names=TRUE, the directory path is prepended to the file names to give a relative file path, if FALSE, the file names are returned.</p>
+<p>This creates a variable called file.names that builds a path to the pdfs that need to be converted into txt files. ‘Path=’ is the directory containing the files and ‘pattern=’ is the pattern of the files - in this case the files all end in “.pdf”. If full.names=TRUE, the directory path is prepended to the file names to give a relative file path, if FALSE, the file names are returned.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZm9yIChmaWxlIGluIGZpbGUubmFtZXMpIHtcbiAgdGV4dCA8LSBwZGZfdGV4dChmaWxlKVxuXG4gIFxuICBvdXRwdXQuZmlsZSA8LSBnc3ViKFwicGRmXCIsIFwidHh0XCIsZmlsZSlcbiAgcHJpbnQob3V0cHV0LmZpbGUpXG4gIHByaW50KGZpbGUpXG4gIHdyaXRlKHRleHQsIG91dHB1dC5maWxlKVxufVxuYGBgIn0= -->
@@ -1810,47 +1795,12 @@ The downloaded binary packages are in
   write(text, output.file)
 }</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwidHh0cy9GYWJpYW5fMjAxOC50eHRcIlxuWzFdIFwicGRmcy9GYWJpYW5fMjAxOC5wZGZcIlxuWzFdIFwidHh0cy9Sb2JpbnNvbl8yMDE4LnR4dFwiXG5bMV0gXCJwZGZzL1JvYmluc29uXzIwMTgucGRmXCJcbiJ9 -->
-<pre><code>[1] &quot;txts/Fabian_2018.txt&quot;
-[1] &quot;pdfs/Fabian_2018.pdf&quot;
-[1] &quot;txts/Robinson_2018.txt&quot;
-[1] &quot;pdfs/Robinson_2018.pdf&quot;</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>For loops are used to repeat a specific block of code. In this for loop, we are repeating the sequence of text &lt;- pdf_txt(file) for each file within file.names (that is, within the pdfs directory).</p>
 <p>The gsub function finds all matches of a string and replaces it with the new string. That is, in file all occurrences of “pdf” will be replaced with “txt” - this will create a variable called output.files.</p>
 <p>The print() function is an argument that prints the string on the console</p>
 <p>The write() function writes the data to a file. That is, ‘text’ is the data to be written out and ‘output.file’ is the string naming the file to write to (in this case, “txt”)</p>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaW5zdGFsbC5wYWNrYWdlcyhcImRldnRvb2xzXCIsIHJlcG9zID0gXCJodHRwOi8vY3Jhbi51cy5yLXByb2plY3Qub3JnXCIpXG5gYGAifQ== -->
-<pre class="r"><code>install.packages(&quot;devtools&quot;, repos = &quot;http://cran.us.r-project.org&quot;)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoidHJ5aW5nIFVSTCAnaHR0cDovL2NyYW4udXMuci1wcm9qZWN0Lm9yZy9iaW4vbWFjb3N4L2VsLWNhcGl0YW4vY29udHJpYi8zLjYvZGV2dG9vbHNfMi4yLjEudGd6J1xuQ29udGVudCB0eXBlICdhcHBsaWNhdGlvbi94LWd6aXAnIGxlbmd0aCAzMzkwNzUgYnl0ZXMgKDMzMSBLQilcbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG5kb3dubG9hZGVkIDMzMSBLQlxuIn0= -->
-<pre><code>trying URL 'http://cran.us.r-project.org/bin/macosx/el-capitan/contrib/3.6/devtools_2.2.1.tgz'
-Content type 'application/x-gzip' length 339075 bytes (331 KB)
-==================================================
-downloaded 331 KB</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5UaGUgZG93bmxvYWRlZCBiaW5hcnkgcGFja2FnZXMgYXJlIGluXG5cdC92YXIvZm9sZGVycy9kYy95bnA2bWd5ZDY3c183eWRra2g4bHJ5bHIwMDAwZ24vVC8vUnRtcG9rbGNvNC9kb3dubG9hZGVkX3BhY2thZ2VzXG4ifQ== -->
-<pre><code>
-The downloaded binary packages are in
-    /var/folders/dc/ynp6mgyd67s_7ydkkh8lrylr0000gn/T//Rtmpoklco4/downloaded_packages</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGV2dG9vbHM6Omluc3RhbGxfZ2l0aHViKFwicm9wZW5zY2lsYWJzL3Fjb2RlclwiKVxuYGBgIn0= -->
-<pre class="r"><code>devtools::install_github(&quot;ropenscilabs/qcoder&quot;)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiU2tpcHBpbmcgaW5zdGFsbCBvZiAncWNvZGVyJyBmcm9tIGEgZ2l0aHViIHJlbW90ZSwgdGhlIFNIQTEgKDk2ZTQyNGJiKSBoYXMgbm90IGNoYW5nZWQgc2luY2UgbGFzdCBpbnN0YWxsLlxuICBVc2UgYGZvcmNlID0gVFJVRWAgdG8gZm9yY2UgaW5zdGFsbGF0aW9uXG4ifQ== -->
-<pre><code>Skipping install of 'qcoder' from a github remote, the SHA1 (96e424bb) has not changed since last install.
-  Use `force = TRUE` to force installation</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShxY29kZXIpXG5gYGAifQ== -->
-<pre class="r"><code>library(qcoder)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p>The devtools package makes package development easier as it provides R functions that simplify common tasks. The last two lines of the script installs the textual analysis package ‘qcoder’.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI2NyZWF0ZV9xY29kZXJfcHJvamVjdChcInFjb2Rlci1hbmFseXNpcy1wcm9qZWN0XCIpXG5cbmltcG9ydF9wcm9qZWN0X2RhdGEocHJvamVjdCA9IFwicWNvZGVyLWFuYWx5c2lzLXByb2plY3RcIilcblxuYGBgIn0= -->
@@ -1873,26 +1823,20 @@ codes_df_path &lt;- &quot;qcoder-analysis-project/data_frames/qcoder_codes_qcode
 file_path &lt;- &quot;qcoder-analysis-project/documents&quot;
 dir(&quot;qcoder-analysis-project/documents&quot;)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiRmFiaWFuXzIwMTgudHh0XCIgICBcIlJvYmluc29uXzIwMTgudHh0XCJcbiJ9 -->
-<pre><code>[1] &quot;Fabian_2018.txt&quot;   &quot;Robinson_2018.txt&quot;</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>file_name builds a path to the data docs_df_path builds a path to the directory that holds the data codes_df_path builds a path to the codes file_path builds a path to the directory holding the files</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmF3UGF0aCA8LSBcIi9Vc2Vycy9zb3BoaWVhdmFyZC9EZXNrdG9wL1NvcGhpZS1BdmFyZC1Qcm9vZi1vZi1Db25jZXB0L3Byb29mLW9mLWNvbmNlcHQvdHh0c1wiXG5kYXRhZmlsZXMgPC0gZGlyKHJhd1BhdGgsIFwiKi50eHRcIiwgaWdub3JlLmNhc2UgPSBUUlVFLCBhbGwuZmlsZXMgPSBUUlVFKVxuXG5maWxlLmNvcHkoZmlsZS5wYXRoKHJhd1BhdGgsIGRhdGFmaWxlcyksIGZpbGVfcGF0aCwgb3ZlcndyaXRlID0gVFJVRSlcbmBgYCJ9 -->
-<pre class="r"><code>rawPath &lt;- &quot;/Users/sophieavard/Desktop/Sophie-Avard-Proof-of-Concept/proof-of-concept/txts&quot;
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmF3UGF0aCA8LSBcIn4vRGVza3RvcC9Tb3BoaWUtQXZhcmQtUHJvb2Ytb2YtQ29uY2VwdC9wcm9vZi1vZi1jb25jZXB0L3R4dHNcIlxuZGF0YWZpbGVzIDwtIGRpcihyYXdQYXRoLCBcIioudHh0XCIsIGlnbm9yZS5jYXNlID0gVFJVRSwgYWxsLmZpbGVzID0gVFJVRSlcblxuZmlsZS5jb3B5KGZpbGUucGF0aChyYXdQYXRoLCBkYXRhZmlsZXMpLCBmaWxlX3BhdGgsIG92ZXJ3cml0ZSA9IFRSVUUpXG5gYGAifQ== -->
+<pre class="r"><code>rawPath &lt;- &quot;~/Desktop/Sophie-Avard-Proof-of-Concept/proof-of-concept/txts&quot;
 datafiles &lt;- dir(rawPath, &quot;*.txt&quot;, ignore.case = TRUE, all.files = TRUE)
 
 file.copy(file.path(rawPath, datafiles), file_path, overwrite = TRUE)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFRSVUUgVFJVRVxuIn0= -->
-<pre><code>[1] TRUE TRUE</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>rawPath builds a path to the directory holding the txt files datafiles builds a path to the files containing “.txt” within the rawPath ignore.case = TRUE constructs a case insensitive pattern</p>
+<p>rawPath builds a path to the directory holding the txtp files datafiles builds a path to the files containing “.txt” within the rawPath ignore.case = TRUE constructs a case insensitive pattern</p>
 <p>The ‘file.copy’ function creates a copy of of the datafiles within the rawPath and places them within the file_path (“qcoder-analysis-project/documents”).</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
@@ -1928,7 +1872,7 @@ file.copy(file.path(rawPath, datafiles), file_path, overwrite = TRUE)</code></pr
 <p>This connects the Shiny app to the working directory and then opens it.</p>
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUG9DIE5vdGVib29rIgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKLS0tCmBgYHtyfQpkaXIoInByb29mLW9mLWNvbmNlcHQiKQoKaW5zdGFsbC5wYWNrYWdlcygncGx5cicsIHJlcG9zID0gImh0dHA6Ly9jcmFuLnVzLnItcHJvamVjdC5vcmciKQppbnN0YWxsLnBhY2thZ2VzKCJwZGZ0b29scyIsIHJlcG9zID0gImh0dHA6Ly9jcmFuLnVzLnItcHJvamVjdC5vcmciKQoKbGlicmFyeShwZGZ0b29scykKCmBgYApgYGB7cn0KZmlsZS5uYW1lcyA8LSBkaXIocGF0aD0icGRmcyIsIHBhdHRlcm4gPSIucGRmIiwgZnVsbC5uYW1lcz1UUlVFKQpgYGAKClRoaXMgY3JlYXRlcyBhIHZhcmlhYmxlIGNhbGxlZCBmaWxlLm5hbWVzIHRoYXQgYnVpbGRzIGEgcGF0aCB0byB0aGUgcGRmcyB0aGF0IG5lZWQgdG8gYmUgY29udmVydGVkIGludG8gdHh0IGZpbGVzLiAnUGF0aD0nIGlzIHRoZSBkaXJlY3RvcnkgY29udGFpbmluZyB0aGUgZmlsZXMgYW5kICdwYXR0ZXJuPScgaXMgdGhlIHBhdHRlcm4gb2YgdGhlIGZpbGVzIC0gaW4gdGhpcyBjYXNlIHRoZSBmaWxlcyBhbGwgZW5kIGluICIucGRmIi4gaWYgZnVsbC5uYW1lcz1UUlVFLCB0aGUgZGlyZWN0b3J5IHBhdGggaXMgcHJlcGVuZGVkIHRvIHRoZSBmaWxlIG5hbWVzIHRvIGdpdmUgYSByZWxhdGl2ZSBmaWxlIHBhdGgsIGlmIEZBTFNFLCB0aGUgZmlsZSBuYW1lcyBhcmUgcmV0dXJuZWQuIAoKYGBge3J9CmZvciAoZmlsZSBpbiBmaWxlLm5hbWVzKSB7CiAgdGV4dCA8LSBwZGZfdGV4dChmaWxlKQoKICAKICBvdXRwdXQuZmlsZSA8LSBnc3ViKCJwZGYiLCAidHh0IixmaWxlKQogIHByaW50KG91dHB1dC5maWxlKQogIHByaW50KGZpbGUpCiAgd3JpdGUodGV4dCwgb3V0cHV0LmZpbGUpCn0KYGBgCgpGb3IgbG9vcHMgYXJlIHVzZWQgdG8gcmVwZWF0IGEgc3BlY2lmaWMgYmxvY2sgb2YgY29kZS4gSW4gdGhpcyBmb3IgbG9vcCwgd2UgYXJlIHJlcGVhdGluZyB0aGUgc2VxdWVuY2Ugb2YgdGV4dCA8LSBwZGZfdHh0KGZpbGUpIGZvciBlYWNoIGZpbGUgd2l0aGluIGZpbGUubmFtZXMgKHRoYXQgaXMsIHdpdGhpbiB0aGUgcGRmcyBkaXJlY3RvcnkpLgoKVGhlIGdzdWIgZnVuY3Rpb24gZmluZHMgYWxsIG1hdGNoZXMgb2YgYSBzdHJpbmcgYW5kIHJlcGxhY2VzIGl0IHdpdGggdGhlIG5ldyBzdHJpbmcuIFRoYXQgaXMsIGluIGZpbGUgYWxsIG9jY3VycmVuY2VzIG9mICJwZGYiIHdpbGwgYmUgcmVwbGFjZWQgd2l0aCAidHh0IiAtIHRoaXMgd2lsbCBjcmVhdGUgYSB2YXJpYWJsZSBjYWxsZWQgb3V0cHV0LmZpbGVzLiAKClRoZSBwcmludCgpIGZ1bmN0aW9uIGlzIGFuIGFyZ3VtZW50IHRoYXQgcHJpbnRzIHRoZSBzdHJpbmcgb24gdGhlIGNvbnNvbGUgCgpUaGUgd3JpdGUoKSBmdW5jdGlvbiB3cml0ZXMgdGhlIGRhdGEgdG8gYSBmaWxlLiBUaGF0IGlzLCAndGV4dCcgaXMgdGhlIGRhdGEgdG8gYmUgd3JpdHRlbiBvdXQgYW5kICdvdXRwdXQuZmlsZScgaXMgdGhlIHN0cmluZyBuYW1pbmcgdGhlIGZpbGUgdG8gd3JpdGUgdG8gKGluIHRoaXMgY2FzZSwgInR4dCIpCgpgYGB7cn0KaW5zdGFsbC5wYWNrYWdlcygiZGV2dG9vbHMiLCByZXBvcyA9ICJodHRwOi8vY3Jhbi51cy5yLXByb2plY3Qub3JnIikKZGV2dG9vbHM6Omluc3RhbGxfZ2l0aHViKCJyb3BlbnNjaWxhYnMvcWNvZGVyIikKbGlicmFyeShxY29kZXIpCmBgYAoKVGhlIGRldnRvb2xzIHBhY2thZ2UgbWFrZXMgcGFja2FnZSBkZXZlbG9wbWVudCBlYXNpZXIgYXMgaXQgcHJvdmlkZXMgUiBmdW5jdGlvbnMgdGhhdCBzaW1wbGlmeSBjb21tb24gdGFza3MuIFRoZSBsYXN0IHR3byBsaW5lcyBvZiB0aGUgc2NyaXB0IGluc3RhbGxzIHRoZSB0ZXh0dWFsIGFuYWx5c2lzIHBhY2thZ2UgJ3Fjb2RlcicuCgpgYGB7cn0KI2NyZWF0ZV9xY29kZXJfcHJvamVjdCgicWNvZGVyLWFuYWx5c2lzLXByb2plY3QiKQoKaW1wb3J0X3Byb2plY3RfZGF0YShwcm9qZWN0ID0gInFjb2Rlci1hbmFseXNpcy1wcm9qZWN0IikKCmBgYAoKVGhlICdjcmVhdGUnIGZ1bmN0aW9uIGlzIHVzZWQgd2hlbiB1c2VycyB3YW50IHRvIGNyZWF0ZSBhbiBlbXB0eSBxY29kZXIgYW5hbHlzaXMuIFRoZSAnaW1wb3J0JyBmdW5jdGlvbiBpcyB1c2VkIHdoZW4gdXNlcnMgd2hlbiB0byBvcGVuIGFuIGV4aXN0aW5nIGFuYWx5c2lzLiBGb3IgdGhlIHB1cnBvc2VzIG9mIHRoaXMgUG9DIG9ubHkgdGhlICdpbXBvcnQnIGZ1bmN0aW9uIHdpbGwgYmUgdXNlZC4KCidQcm9qZWN0PScgaXMgdGhlIG5hbWUgb2YgdGhlIHFjb2RlciBhbmFseXNpcy4KCmBgYHtyfQpwcm9qZWN0X25hbWUgPSAicWNvZGVyLWFuYWx5c2lzLXByb2plY3QiCmZpbGVfbmFtZSA8LSAiRmFiaWFuXzIwMTgudHh0Igpkb2NzX2RmX3BhdGggPC0icWNvZGVyLWFuYWx5c2lzLXByb2plY3QvZGF0YV9mcmFtZXMvcWNvZGVyX2RvY3VtZW50c19xY29kZXItYW5hbHlzaXMtcHJvamVjdC5yZHMiCmNvZGVzX2RmX3BhdGggPC0gInFjb2Rlci1hbmFseXNpcy1wcm9qZWN0L2RhdGFfZnJhbWVzL3Fjb2Rlcl9jb2Rlc19xY29kZXItYW5hbHlzaXMtcHJvamVjdC5yZHMiCmZpbGVfcGF0aCA8LSAicWNvZGVyLWFuYWx5c2lzLXByb2plY3QvZG9jdW1lbnRzIgpkaXIoInFjb2Rlci1hbmFseXNpcy1wcm9qZWN0L2RvY3VtZW50cyIpCmBgYAoKZmlsZV9uYW1lIGJ1aWxkcyBhIHBhdGggdG8gdGhlIGRhdGEgCmRvY3NfZGZfcGF0aCBidWlsZHMgYSBwYXRoIHRvIHRoZSBkaXJlY3RvcnkgdGhhdCBob2xkcyB0aGUgZGF0YSAKY29kZXNfZGZfcGF0aCBidWlsZHMgYSBwYXRoIHRvIHRoZSBjb2RlcyAKZmlsZV9wYXRoIGJ1aWxkcyBhIHBhdGggdG8gdGhlIGRpcmVjdG9yeSBob2xkaW5nIHRoZSBmaWxlcyAKCmBgYHtyfQpyYXdQYXRoIDwtICIvVXNlcnMvc29waGllYXZhcmQvRGVza3RvcC9Tb3BoaWUtQXZhcmQtUHJvb2Ytb2YtQ29uY2VwdC9wcm9vZi1vZi1jb25jZXB0L3R4dHMiCmRhdGFmaWxlcyA8LSBkaXIocmF3UGF0aCwgIioudHh0IiwgaWdub3JlLmNhc2UgPSBUUlVFLCBhbGwuZmlsZXMgPSBUUlVFKQoKZmlsZS5jb3B5KGZpbGUucGF0aChyYXdQYXRoLCBkYXRhZmlsZXMpLCBmaWxlX3BhdGgsIG92ZXJ3cml0ZSA9IFRSVUUpCmBgYAoKcmF3UGF0aCBidWlsZHMgYSBwYXRoIHRvIHRoZSBkaXJlY3RvcnkgaG9sZGluZyB0aGUgdHh0IGZpbGVzIApkYXRhZmlsZXMgYnVpbGRzIGEgcGF0aCB0byB0aGUgZmlsZXMgY29udGFpbmluZyAiLnR4dCIgd2l0aGluIHRoZSByYXdQYXRoCmlnbm9yZS5jYXNlID0gVFJVRSBjb25zdHJ1Y3RzIGEgY2FzZSBpbnNlbnNpdGl2ZSBwYXR0ZXJuIAoKVGhlICdmaWxlLmNvcHknIGZ1bmN0aW9uIGNyZWF0ZXMgYSBjb3B5IG9mIG9mIHRoZSBkYXRhZmlsZXMgd2l0aGluIHRoZSByYXdQYXRoIGFuZCBwbGFjZXMgdGhlbSB3aXRoaW4gdGhlIGZpbGVfcGF0aCAoInFjb2Rlci1hbmFseXNpcy1wcm9qZWN0L2RvY3VtZW50cyIpLiAKCmBgYHtyfQpuZXdfZGF0YWZyYW1lIDwtIHJlYWRSRFMoZG9jc19kZl9wYXRoKQpgYGAKClRoaXMgcHJvdmVzIHRoYXQgdGhlIGRhdGEgaXMgJ2luJyB0aGUgc3lzdGVtIGFzIGl0IHdyaXRlcyBhIHNpbmdsZSBSIG9iamVjdCAoZG9jc19kZl9wYXRoKSB0byBhIGZpbGUsIGFuZCByZXN0b3JlcyB0aGUgb2JqZWN0IGFzIG5ld19kYXRhZnJhbWUuCgpgYGB7cn0KcmVhZF9jb2RlX2RhdGEocHJvamVjdF9uYW1lID0gcHJvamVjdF9uYW1lKQpgYGAKVGhpcyByZWFkcyB0aGUgY3N2IGZpbGUgY29udGFpbmluZyB0aGUgY29kZXMgd2l0aGluIHRoZSBwcm9qZWN0CgpgYGB7cn0KY29kZXNfZGF0YWZyYW1lIDwtIHJlYWRSRFMoY29kZXNfZGZfcGF0aCkKYGBgClRoaXMgbG9hZHMgdGhlIGNvZGVzIGludG8gUgoKYGBge3J9CnFjb2RlKHVzZV93ZD1UUlVFKQpgYGAKClRoaXMgY29ubmVjdHMgdGhlIFNoaW55IGFwcCB0byB0aGUgd29ya2luZyBkaXJlY3RvcnkgYW5kIHRoZW4gb3BlbnMgaXQuIAo=</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUG9DIE5vdGVib29rIgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKLS0tCkJlbG93IGlzIGEgc3RlcC1ieS1zdGVwIGd1aWRlIG9uIGhvdyB0byBydW4gdGhlIFIgc2NyaXB0LgoKCmBgYHtyfQojc2V0IHdvcmtpbmcgZGlyZWN0b3J5IHRvICRIT01FL0Rlc2t0b3AvcHJvb2Ytb2YtY29uY2VwdAojZGlyKCJwcm9vZi1vZi1jb25jZXB0IikKYGBgCllvdSBuZWVkIHRvIHNldCB5b3VyIHdvcmtpbmcgZGlyZWN0b3J5IHRvIHRoZSBwcm9vZi1vZi1jb25jZXB0IGZvbGRlciAod2hpY2ggc2hvdWxkIGJlIHNhdmVkIG9uIHlvdXIgRGVza3RvcCkuIApgYGB7cn0KaW5zdGFsbC5wYWNrYWdlcygncGx5cicsIHJlcG9zID0gImh0dHA6Ly9jcmFuLnVzLnItcHJvamVjdC5vcmciKQppbnN0YWxsLnBhY2thZ2VzKCJwZGZ0b29scyIsIHJlcG9zID0gImh0dHA6Ly9jcmFuLnVzLnItcHJvamVjdC5vcmciKQoKaW5zdGFsbC5wYWNrYWdlcygiZGV2dG9vbHMiLCByZXBvcyA9ICJodHRwOi8vY3Jhbi51cy5yLXByb2plY3Qub3JnIikKZGV2dG9vbHM6Omluc3RhbGxfZ2l0aHViKCJyb3BlbnNjaWxhYnMvcWNvZGVyIikKCmxpYnJhcnkocGRmdG9vbHMpCmxpYnJhcnkocWNvZGVyKQpgYGAKSW5zdGFsbCBhbGwgb2YgdGhlIHBhY2thZ2VzIG5lZWRlZCBmb3IgdGhpcyBwcm9vZiBvZiBjb25jZXB0LiBUaGUgZGV2dG9vbHMgcGFja2FnZSBtYWtlcyBwYWNrYWdlIGRldmVsb3BtZW50IGVhc2llciBhcyBpdCBwcm92aWRlcyBSIGZ1bmN0aW9ucyB0aGF0IHNpbXBsaWZ5IGNvbW1vbiB0YXNrcy4gVGhlIGxhc3QgdHdvIGxpbmVzIG9mIHRoZSBzY3JpcHQgaW5zdGFsbHMgdGhlIHRleHR1YWwgYW5hbHlzaXMgcGFja2FnZSAncWNvZGVyJy4KCmBgYHtyfQpmaWxlLm5hbWVzIDwtIGRpcihwYXRoPSJwZGZzIiwgcGF0dGVybiA9Ii5wZGYiLCBmdWxsLm5hbWVzPVRSVUUpCmBgYApUaGlzIGNyZWF0ZXMgYSB2YXJpYWJsZSBjYWxsZWQgZmlsZS5uYW1lcyB0aGF0IGJ1aWxkcyBhIHBhdGggdG8gdGhlIHBkZnMgdGhhdCBuZWVkIHRvIGJlIGNvbnZlcnRlZCBpbnRvIHR4dCBmaWxlcy4gJ1BhdGg9JyBpcyB0aGUgZGlyZWN0b3J5IGNvbnRhaW5pbmcgdGhlIGZpbGVzIGFuZCAncGF0dGVybj0nIGlzIHRoZSBwYXR0ZXJuIG9mIHRoZSBmaWxlcyAtIGluIHRoaXMgY2FzZSB0aGUgZmlsZXMgYWxsIGVuZCBpbiAiLnBkZiIuIElmIGZ1bGwubmFtZXM9VFJVRSwgdGhlIGRpcmVjdG9yeSBwYXRoIGlzIHByZXBlbmRlZCB0byB0aGUgZmlsZSBuYW1lcyB0byBnaXZlIGEgcmVsYXRpdmUgZmlsZSBwYXRoLCBpZiBGQUxTRSwgdGhlIGZpbGUgbmFtZXMgYXJlIHJldHVybmVkLiAKCmBgYHtyfQpmb3IgKGZpbGUgaW4gZmlsZS5uYW1lcykgewogIHRleHQgPC0gcGRmX3RleHQoZmlsZSkKCiAgCiAgb3V0cHV0LmZpbGUgPC0gZ3N1YigicGRmIiwgInR4dCIsZmlsZSkKICBwcmludChvdXRwdXQuZmlsZSkKICBwcmludChmaWxlKQogIHdyaXRlKHRleHQsIG91dHB1dC5maWxlKQp9CmBgYApGb3IgbG9vcHMgYXJlIHVzZWQgdG8gcmVwZWF0IGEgc3BlY2lmaWMgYmxvY2sgb2YgY29kZS4gSW4gdGhpcyBmb3IgbG9vcCwgd2UgYXJlIHJlcGVhdGluZyB0aGUgc2VxdWVuY2Ugb2YgdGV4dCA8LSBwZGZfdHh0KGZpbGUpIGZvciBlYWNoIGZpbGUgd2l0aGluIGZpbGUubmFtZXMgKHRoYXQgaXMsIHdpdGhpbiB0aGUgcGRmcyBkaXJlY3RvcnkpLgoKVGhlIGdzdWIgZnVuY3Rpb24gZmluZHMgYWxsIG1hdGNoZXMgb2YgYSBzdHJpbmcgYW5kIHJlcGxhY2VzIGl0IHdpdGggdGhlIG5ldyBzdHJpbmcuIFRoYXQgaXMsIGluIGZpbGUgYWxsIG9jY3VycmVuY2VzIG9mICJwZGYiIHdpbGwgYmUgcmVwbGFjZWQgd2l0aCAidHh0IiAtIHRoaXMgd2lsbCBjcmVhdGUgYSB2YXJpYWJsZSBjYWxsZWQgb3V0cHV0LmZpbGVzLiAKClRoZSBwcmludCgpIGZ1bmN0aW9uIGlzIGFuIGFyZ3VtZW50IHRoYXQgcHJpbnRzIHRoZSBzdHJpbmcgb24gdGhlIGNvbnNvbGUgCgpUaGUgd3JpdGUoKSBmdW5jdGlvbiB3cml0ZXMgdGhlIGRhdGEgdG8gYSBmaWxlLiBUaGF0IGlzLCAndGV4dCcgaXMgdGhlIGRhdGEgdG8gYmUgd3JpdHRlbiBvdXQgYW5kICdvdXRwdXQuZmlsZScgaXMgdGhlIHN0cmluZyBuYW1pbmcgdGhlIGZpbGUgdG8gd3JpdGUgdG8gKGluIHRoaXMgY2FzZSwgInR4dCIpCgpgYGB7cn0KI2NyZWF0ZV9xY29kZXJfcHJvamVjdCgicWNvZGVyLWFuYWx5c2lzLXByb2plY3QiKQoKaW1wb3J0X3Byb2plY3RfZGF0YShwcm9qZWN0ID0gInFjb2Rlci1hbmFseXNpcy1wcm9qZWN0IikKCmBgYApUaGUgJ2NyZWF0ZScgZnVuY3Rpb24gaXMgdXNlZCB3aGVuIHVzZXJzIHdhbnQgdG8gY3JlYXRlIGFuIGVtcHR5IHFjb2RlciBhbmFseXNpcy4gVGhlICdpbXBvcnQnIGZ1bmN0aW9uIGlzIHVzZWQgd2hlbiB1c2VycyB3aGVuIHRvIG9wZW4gYW4gZXhpc3RpbmcgYW5hbHlzaXMuIEZvciB0aGUgcHVycG9zZXMgb2YgdGhpcyBQb0Mgb25seSB0aGUgJ2ltcG9ydCcgZnVuY3Rpb24gd2lsbCBiZSB1c2VkLgoKJ1Byb2plY3Q9JyBpcyB0aGUgbmFtZSBvZiB0aGUgcWNvZGVyIGFuYWx5c2lzLgoKYGBge3J9CnByb2plY3RfbmFtZSA9ICJxY29kZXItYW5hbHlzaXMtcHJvamVjdCIKZmlsZV9uYW1lIDwtICJGYWJpYW5fMjAxOC50eHQiCmRvY3NfZGZfcGF0aCA8LSJxY29kZXItYW5hbHlzaXMtcHJvamVjdC9kYXRhX2ZyYW1lcy9xY29kZXJfZG9jdW1lbnRzX3Fjb2Rlci1hbmFseXNpcy1wcm9qZWN0LnJkcyIKY29kZXNfZGZfcGF0aCA8LSAicWNvZGVyLWFuYWx5c2lzLXByb2plY3QvZGF0YV9mcmFtZXMvcWNvZGVyX2NvZGVzX3Fjb2Rlci1hbmFseXNpcy1wcm9qZWN0LnJkcyIKZmlsZV9wYXRoIDwtICJxY29kZXItYW5hbHlzaXMtcHJvamVjdC9kb2N1bWVudHMiCmRpcigicWNvZGVyLWFuYWx5c2lzLXByb2plY3QvZG9jdW1lbnRzIikKYGBgCmZpbGVfbmFtZSBidWlsZHMgYSBwYXRoIHRvIHRoZSBkYXRhIApkb2NzX2RmX3BhdGggYnVpbGRzIGEgcGF0aCB0byB0aGUgZGlyZWN0b3J5IHRoYXQgaG9sZHMgdGhlIGRhdGEgCmNvZGVzX2RmX3BhdGggYnVpbGRzIGEgcGF0aCB0byB0aGUgY29kZXMgCmZpbGVfcGF0aCBidWlsZHMgYSBwYXRoIHRvIHRoZSBkaXJlY3RvcnkgaG9sZGluZyB0aGUgZmlsZXMgCgpgYGB7cn0KcmF3UGF0aCA8LSAifi9EZXNrdG9wL1NvcGhpZS1BdmFyZC1Qcm9vZi1vZi1Db25jZXB0L3Byb29mLW9mLWNvbmNlcHQvdHh0cyIKZGF0YWZpbGVzIDwtIGRpcihyYXdQYXRoLCAiKi50eHQiLCBpZ25vcmUuY2FzZSA9IFRSVUUsIGFsbC5maWxlcyA9IFRSVUUpCgpmaWxlLmNvcHkoZmlsZS5wYXRoKHJhd1BhdGgsIGRhdGFmaWxlcyksIGZpbGVfcGF0aCwgb3ZlcndyaXRlID0gVFJVRSkKYGBgCnJhd1BhdGggYnVpbGRzIGEgcGF0aCB0byB0aGUgZGlyZWN0b3J5IGhvbGRpbmcgdGhlIHR4dHAgZmlsZXMgCmRhdGFmaWxlcyBidWlsZHMgYSBwYXRoIHRvIHRoZSBmaWxlcyBjb250YWluaW5nICIudHh0IiB3aXRoaW4gdGhlIHJhd1BhdGgKaWdub3JlLmNhc2UgPSBUUlVFIGNvbnN0cnVjdHMgYSBjYXNlIGluc2Vuc2l0aXZlIHBhdHRlcm4gCgpUaGUgJ2ZpbGUuY29weScgZnVuY3Rpb24gY3JlYXRlcyBhIGNvcHkgb2Ygb2YgdGhlIGRhdGFmaWxlcyB3aXRoaW4gdGhlIHJhd1BhdGggYW5kIHBsYWNlcyB0aGVtIHdpdGhpbiB0aGUgZmlsZV9wYXRoICgicWNvZGVyLWFuYWx5c2lzLXByb2plY3QvZG9jdW1lbnRzIikuIAoKYGBge3J9Cm5ld19kYXRhZnJhbWUgPC0gcmVhZFJEUyhkb2NzX2RmX3BhdGgpCmBgYApUaGlzIHByb3ZlcyB0aGF0IHRoZSBkYXRhIGlzICdpbicgdGhlIHN5c3RlbSBhcyBpdCB3cml0ZXMgYSBzaW5nbGUgUiBvYmplY3QgKGRvY3NfZGZfcGF0aCkgdG8gYSBmaWxlLCBhbmQgcmVzdG9yZXMgdGhlIG9iamVjdCBhcyBuZXdfZGF0YWZyYW1lLgoKYGBge3J9CnJlYWRfY29kZV9kYXRhKHByb2plY3RfbmFtZSA9IHByb2plY3RfbmFtZSkKYGBgClRoaXMgcmVhZHMgdGhlIGNzdiBmaWxlIGNvbnRhaW5pbmcgdGhlIGNvZGVzIHdpdGhpbiB0aGUgcHJvamVjdAoKYGBge3J9CmNvZGVzX2RhdGFmcmFtZSA8LSByZWFkUkRTKGNvZGVzX2RmX3BhdGgpCmBgYApUaGlzIGxvYWRzIHRoZSBjb2RlcyBpbnRvIFIKCmBgYHtyfQpxY29kZSh1c2Vfd2Q9VFJVRSkKYGBgClRoaXMgY29ubmVjdHMgdGhlIFNoaW55IGFwcCB0byB0aGUgd29ya2luZyBkaXJlY3RvcnkgYW5kIHRoZW4gb3BlbnMgaXQuIAo=</div>
 
 
 

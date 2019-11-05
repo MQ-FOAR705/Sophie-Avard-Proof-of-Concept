@@ -2,20 +2,30 @@
 title: "PoC Notebook"
 output: html_notebook
 ---
-```{r}
-dir("proof-of-concept")
+Below is a step-by-step guide on how to run the R script.
 
+
+```{r}
+#set working directory to $HOME/Desktop/proof-of-concept
+#dir("proof-of-concept")
+```
+You need to set your working directory to the proof-of-concept folder (which should be saved on your Desktop). 
+```{r}
 install.packages('plyr', repos = "http://cran.us.r-project.org")
 install.packages("pdftools", repos = "http://cran.us.r-project.org")
 
-library(pdftools)
+install.packages("devtools", repos = "http://cran.us.r-project.org")
+devtools::install_github("ropenscilabs/qcoder")
 
+library(pdftools)
+library(qcoder)
 ```
+Install all of the packages needed for this proof of concept. The devtools package makes package development easier as it provides R functions that simplify common tasks. The last two lines of the script installs the textual analysis package 'qcoder'.
+
 ```{r}
 file.names <- dir(path="pdfs", pattern =".pdf", full.names=TRUE)
 ```
-
-This creates a variable called file.names that builds a path to the pdfs that need to be converted into txt files. 'Path=' is the directory containing the files and 'pattern=' is the pattern of the files - in this case the files all end in ".pdf". if full.names=TRUE, the directory path is prepended to the file names to give a relative file path, if FALSE, the file names are returned. 
+This creates a variable called file.names that builds a path to the pdfs that need to be converted into txt files. 'Path=' is the directory containing the files and 'pattern=' is the pattern of the files - in this case the files all end in ".pdf". If full.names=TRUE, the directory path is prepended to the file names to give a relative file path, if FALSE, the file names are returned. 
 
 ```{r}
 for (file in file.names) {
@@ -28,7 +38,6 @@ for (file in file.names) {
   write(text, output.file)
 }
 ```
-
 For loops are used to repeat a specific block of code. In this for loop, we are repeating the sequence of text <- pdf_txt(file) for each file within file.names (that is, within the pdfs directory).
 
 The gsub function finds all matches of a string and replaces it with the new string. That is, in file all occurrences of "pdf" will be replaced with "txt" - this will create a variable called output.files. 
@@ -38,20 +47,11 @@ The print() function is an argument that prints the string on the console
 The write() function writes the data to a file. That is, 'text' is the data to be written out and 'output.file' is the string naming the file to write to (in this case, "txt")
 
 ```{r}
-install.packages("devtools", repos = "http://cran.us.r-project.org")
-devtools::install_github("ropenscilabs/qcoder")
-library(qcoder)
-```
-
-The devtools package makes package development easier as it provides R functions that simplify common tasks. The last two lines of the script installs the textual analysis package 'qcoder'.
-
-```{r}
 #create_qcoder_project("qcoder-analysis-project")
 
 import_project_data(project = "qcoder-analysis-project")
 
 ```
-
 The 'create' function is used when users want to create an empty qcoder analysis. The 'import' function is used when users when to open an existing analysis. For the purposes of this PoC only the 'import' function will be used.
 
 'Project=' is the name of the qcoder analysis.
@@ -64,20 +64,18 @@ codes_df_path <- "qcoder-analysis-project/data_frames/qcoder_codes_qcoder-analys
 file_path <- "qcoder-analysis-project/documents"
 dir("qcoder-analysis-project/documents")
 ```
-
 file_name builds a path to the data 
 docs_df_path builds a path to the directory that holds the data 
 codes_df_path builds a path to the codes 
 file_path builds a path to the directory holding the files 
 
 ```{r}
-rawPath <- "/Users/sophieavard/Desktop/Sophie-Avard-Proof-of-Concept/proof-of-concept/txts"
+rawPath <- "~/Desktop/Sophie-Avard-Proof-of-Concept/proof-of-concept/txts"
 datafiles <- dir(rawPath, "*.txt", ignore.case = TRUE, all.files = TRUE)
 
 file.copy(file.path(rawPath, datafiles), file_path, overwrite = TRUE)
 ```
-
-rawPath builds a path to the directory holding the txt files 
+rawPath builds a path to the directory holding the txtp files 
 datafiles builds a path to the files containing ".txt" within the rawPath
 ignore.case = TRUE constructs a case insensitive pattern 
 
@@ -86,7 +84,6 @@ The 'file.copy' function creates a copy of of the datafiles within the rawPath a
 ```{r}
 new_dataframe <- readRDS(docs_df_path)
 ```
-
 This proves that the data is 'in' the system as it writes a single R object (docs_df_path) to a file, and restores the object as new_dataframe.
 
 ```{r}
@@ -102,5 +99,4 @@ This loads the codes into R
 ```{r}
 qcode(use_wd=TRUE)
 ```
-
 This connects the Shiny app to the working directory and then opens it. 
