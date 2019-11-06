@@ -142,11 +142,14 @@ dir("qcoder-analysis-project/documents")
 ```
 
 Now the user needs to copy the files in 'txts' and place them in the 'documents' folder within the qcoder_analysis_project. To do this, run:
+
 ```Rscript
 rawPath <- "~/Desktop/proof-of-concept/txts"
 datafiles <- dir(rawPath, "*.txt", ignore.case = TRUE, all.files = TRUE)
 file.copy(file.path(rawPath, datafiles), file_path, overwrite = TRUE)
 ```
+Note, the 'rawPath' is the file path to the txts folder within the proof-of-concept directory. This may change depending on where the user has saved this directory. 
+
 Check the 'documents' folder in the qcoder_analysis_project to make sure that the text files have been copied into the folder.
 
 To read the data and codes into the system, run:
