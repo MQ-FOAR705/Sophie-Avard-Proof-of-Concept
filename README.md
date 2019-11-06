@@ -16,7 +16,7 @@ You can view my Notebook at http://rpubs.com/Savard/PoC.
 - [Installation](#installation)
 - [Results](#results)
 - [Issues](#issues)
-- [Future Direction](#futuredirection)
+- [Future direction](#future)
 - [License](#license)
 
 # Outline
@@ -33,9 +33,7 @@ I then used R to:
 
 
 # Setup
-In order for this tool to work you need to download the [proof-of-concept zip file](proof-of-concept.zip), unzip it and save it to your Desktop. Follow the instruction in this README to run the R script, for a more detailed description of the script visist my Notebook at: http://rpubs.com/Savard/PoC
-
-Prior to running the script, you need to set your working directory to the proof-of-concept directory in RStudio.
+In order for this tool to work you need to download the raw data from the [proof-of-concept zip file](proof-of-concept.zip) and save it to your Desktop as 'proof-of-concept'. Follow the instruction in this README to run the R script, for a more detailed description of how I used the script to run my PoC visit my Notebook at: http://rpubs.com/Savard/PoC
 
 # Installation
 Go follow the instructions at https://www.r-project.org if you need to install R. 
@@ -196,7 +194,7 @@ This is an example of the data that I exported as a csv format:
 # Issues
 At this stage, the Qcoder application does not save coded data when the R session ends. This is due to a bug in the Qcoder package that is out of my control. As such, data must be coded and extracted within a single session. This is a work in progress and is a high priority development item. 
 
-# Future direction
+# Future
 1. I am currently working on being able to save and re-open qcoder sessions in R. 
 2. At this stage, the script cannot be run through terminal due to the ui and server of the shiny app. I am working towards being able to run the script through the terminal command ```Rscript qcoder.R```
 3. I am also working towards creating my own Shiny app for this Rscript so that it can be run easily through Chrome browser.
