@@ -7,6 +7,8 @@ This PoC is a lightweight and easy-to-use tool for analysing qualitative data in
 
 This R script uses the qcoder package at https://github.com/ropenscilabs/qcoder. 
 
+You can view my Notebook at http://rpubs.com/Savard/PoC.
+
 
 # Table of Contents
 - [Outline of the project](#outline)
@@ -31,7 +33,7 @@ I then used R to:
 
 
 # Setup
-In order for this tool to work you need to download the [proof-of-concept zip file](proof-of-concept.zip), unzip it and save it to your Desktop. Follow the instruction in this README to run the R script, for a more detailed description of the script, download the POC-notebook.
+In order for this tool to work you need to download the [proof-of-concept zip file](proof-of-concept.zip), unzip it and save it to your Desktop. Follow the instruction in this README to run the R script, for a more detailed description of the script visist my Notebook at: http://rpubs.com/Savard/PoC
 
 Prior to running the script, you need to set your working directory to the proof-of-concept directory in RStudio.
 
@@ -158,7 +160,7 @@ Lastly, to open the qcoder analysis, run:
 qcode(use_wd=TRUE)
 ```
 
-Please note, a breakdown of this R script and its function is located in the POC-Notebook.
+Please note, a breakdown of this R script and its function is located in my Notebook at http://rpubs.com/Savard/PoC
 
 ## Coding the data 
 For the purposes of this PoC, I have provided examples of how I coded the two txt files in the proof-of-concept directory. Using the Shiny app, codes can be assigned to text in two ways:
