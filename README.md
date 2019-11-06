@@ -198,7 +198,7 @@ At this stage, the Qcoder application does not save coded data when the R sessio
 1. I am currently working on being able to save and re-open qcoder sessions in R. 
 2. At this stage, the script cannot be run through terminal due to the ui and server of the shiny app. I am working towards being able to run the script through the terminal command ```Rscript qcoder.R```
 3. I am also working towards creating my own Shiny app for this Rscript so that it can be run easily through Chrome browser.
-4. Lastly, I am working on a script that will assign a column to the csv file for references. This script will used the document unit (.eg "1") and the document name (eg. "Fabian_2018") to automatically create an in-text references that can be pasted into my thesis. 
+4. Lastly, I am working on a script that will assign a column to the csv file for references. This script will used the document unit (eg. "1") and the document name (eg. "Fabian_2018") to automatically create an in-text references that can be pasted into my thesis. 
 
 # License
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
