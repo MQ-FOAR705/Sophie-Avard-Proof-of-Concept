@@ -61,11 +61,10 @@ In order for this PoC to work, users must set their working directory to the pro
 
 ```Rscript
 #set wd to $HOME/path/to/proof-of-concept
-setwd($HOME/Desktop/proof-of-concept)
 ```
-NOTE: '$HOME' should be replaced with the users home directory. For example, 
+For example, 
 ```Rscript 
-setwd(Users/sophieavard/Desktop/proof-of-concept)
+setwd("~/Desktop/proof-of-concept")
 ```
 
 ## Install packages
