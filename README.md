@@ -33,7 +33,7 @@ I then used R to:
 
 
 # Setup
-In order for this tool to work you need to download the raw data from the [proof-of-concept zip file](proof-of-concept.zip) and save it to your Desktop as 'proof-of-concept'. Follow the instruction in this README to run the R script, for a more detailed description of how I used the script to run my PoC visit my RNotebook at: http://rpubs.com/Savard/PoC
+In order for this tool to work you need to download the [proof-of-concept zip file](proof-of-concept.zip) and save it to your Desktop as 'proof-of-concept'. Follow the instruction in this README to run the R script, for a more detailed description of how I used the script to run my PoC visit my RNotebook at: http://rpubs.com/Savard/PoC
 
 # Installation
 Go follow the instructions at https://www.r-project.org if you need to install R. 
@@ -57,10 +57,10 @@ echo 'Sys.setlocale(category="LC_ALL", locale = "en_US.UTF-8")' >> ~/.bash_profi
 brew cask install rstudio
 ```
 ## Set working directory
-In order for this PoC to work, users must set their working directory to the proof-of-concept directory (this should have been saved on the Desktop during [Setup](#setup). To set your working directory, run the following script: 
+In order for this PoC to work, users must set their working directory to the proof-of-concept directory (this should have been saved on the Desktop during [Setup](#setup). To set your working directory, run: 
 
 ```Rscript
-#set wd to $HOME/path/to/proof-of-concept
+setwd("$HOME/path/to/proof-of-concept")
 ```
 For example, 
 ```Rscript 
@@ -68,8 +68,9 @@ setwd("~/Desktop/proof-of-concept")
 ```
 
 ## Install packages
-In order to ensure a consistent environment across multiple machines, use the ```renv.lock``` file to use the exact same R packages. To do this, follow these steps:
-1. clone the project repository in Github 
+In order to ensure a consistent environment across multiple machines, use the ```renv.lock``` file to install the exact R packages. To do this, follow these steps:
+1. ensure your working directory is set to proof-of-concept 
+2. ensure that the ```renv.lock``` file is in this directory
 2. execute ```renv::init()``` to automatically install the packages declared in that lockfile into your own private project library. 
 By following these steps, you will be able to work within the project usign the exact same R packages. For further instructions on renv go to: https://rstudio.github.io/renv/
 
@@ -89,7 +90,7 @@ library(qcoder)
 ```
 
 ## Pdf to Text 
-As the textual analysis requires the use of txt files, users need to convert pdfdocuments into txt. To do this, run the following script in RStudio:
+As the textual analysis requires the use of txt files, users need to convert pdf documents into txt. To do this, run the following script in RStudio:
 
 ```Rscript
 #creates variable called file.names that builds path to the pdfs 
@@ -171,6 +172,13 @@ qcode(use_wd=TRUE)
 Please note, a breakdown of this R script and its function is located in my Notebook at http://rpubs.com/Savard/PoC
 
 ## Coding the data 
+To code the data, select the qcoder-analysis-project folder then click 'Reload project for data updating'. Next, click 'add codes to text data' in the left panel. The two text files should appear in the drop-down menu under 'Document'. 
+
+![qcoder execution](images/qcoder.png)
+
+
+If the documents are not in the drop-down menu, go to the [Issues](#issues) section and read how to fix it. 
+
 For the purposes of this PoC, I have provided examples of how I coded the two txt files in the proof-of-concept directory. Using the Shiny app, codes can be assigned to text in two ways:
 
 1. Surround the text to be coded with (QCODE)(/QCODE){#tag}. For example: 
@@ -201,13 +209,21 @@ This is an example of the data that I exported as a csv format:
 # Issues
 At this stage, the Qcoder application does not save coded data when the R session ends. This is due to a bug in the Qcoder package that is out of my control. As such, data must be coded and extracted within a single session. This is a work in progress and is a high priority development item. 
 
-Moreover, occasionally the texts do not load in the 'add codes to text data' section in the shiny app - This is a bug in the shiny app itself. To check whether to error is in the script or in the shiny app, check the 'documents' folder in the qcoder-analysis-project to make sure it contains two text files: Fabian_2018 and Robinson_2018. 
+Moreover, occasionally the texts do not load within the 'add codes to text data' section in the shiny app - I am unable to fix this as it is a bug in the shiny app itself. To check whether to error is in the script or in the shiny app, check the 'documents' folder in the qcoder-analysis-project to make sure it contains two text files: Fabian_2018 and Robinson_2018. If both text files are in the folder it seems the script has worked. Follow these instructions to get the data in the app:
+1. Open the shiny app again using ```qcode(use_wd=TRUE)``` 
+2. In the left panel go to 'add data' 
+3. Click 'select file' 
+4. Select the two documents
+5. In the left panel go to 'add codes to text data' and click the drop-down box under 'Document' 
+
+This error only occurs in the shiny app occasionally. Most of the time, the user should be able to run the script and simple select the document from the drop-down box. 
 
 # Future
-1. I am currently working on being able to save and re-open qcoder sessions in R. 
-2. At this stage, the script cannot be run through terminal due to the ui and server of the shiny app. I am working towards being able to run the script through the terminal command ```Rscript qcoder.R```
-3. I am also working towards creating my own Shiny app for this Rscript so that it can be run easily through Chrome browser.
-4. Lastly, I am working on a script that will assign a column to the csv file for references. This script will used the document unit (eg. "1") and the document name (eg. "Fabian_2018") to automatically create an in-text references that can be pasted into my thesis. 
+1. It is important that the bug within the shiny app is fixed so that the data loads each time. 
+2. I am currently working on being able to save and re-open qcoder sessions in R. 
+3. At this stage, the script cannot be run through terminal due to the ui and server of the shiny app. I am working towards being able to run the script through the terminal command ```Rscript qcoder.R```
+4. I am also working towards creating my own Shiny app for this Rscript so that it can be run easily through Chrome browser.
+5. Lastly, I am working on a script that will assign a column to the csv file for references. This script will used the document unit (eg. "1") and the document name (eg. "Fabian_2018") to automatically create an in-text references that can be pasted into my thesis. 
 
 # License
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
