@@ -7,17 +7,21 @@ Below is a step-by-step guide on how to run the R script.
 
 ```{r}
 #set working directory to $HOME/Desktop/proof-of-concept
-#dir("proof-of-concept")
+#setwd("/Users/sophieavard/Desktop/proof-of-concept")
 ```
 You need to set your working directory to the proof-of-concept folder (which should be saved on your Desktop). 
+
+```{r}
+#getwd()
+```
+
 ```{r}
 install.packages('plyr', repos = "http://cran.us.r-project.org")
-install.packages("pdftools", repos = "http://cran.us.r-project.org")
+install.packages("pdftools")
 library(pdftools)
 
-install.packages("devtools", repos = "http://cran.us.r-project.org")
+install.packages("devtools")
 devtools::install_github("ropenscilabs/qcoder")
-
 
 library(qcoder)
 ```

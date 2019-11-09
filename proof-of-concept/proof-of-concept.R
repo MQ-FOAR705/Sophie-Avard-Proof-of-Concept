@@ -1,17 +1,15 @@
 
 #set working directory to $HOME/Desktop/proof-of-concept
-#setwd()
+#setwd("/Users/sophieavard/Desktop/proof-of-concept")
 
 #install packages
 install.packages('plyr', repos = "http://cran.us.r-project.org")
-install.packages("pdftools", repos = "http://cran.us.r-project.org")
+install.packages("pdftools")
 library(pdftools)
 
-install.packages("devtools", repos = "http://cran.us.r-project.org")
+install.packages("devtools")
 devtools::install_github("ropenscilabs/qcoder")
 library(qcoder)
-
-
 
 #pdf-to-text
 file.names <- dir(path="pdfs", pattern =".pdf", full.names=TRUE)
