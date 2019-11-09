@@ -14,6 +14,7 @@ You can view my Notebook at http://rpubs.com/Savard/PoC.
 - [Outline of the project](#outline)
 - [Installation](#installation)
 - [Setup](#setup)
+- [Script](#script)
 - [Results](#results)
 - [Issues](#issues)
 - [Future direction](#future)
@@ -67,15 +68,10 @@ For example,
 setwd("/Users/sophieavard/Desktop/proof-of-concept")
 ```
 
-Note, if you have followed the exact set-up instructions up to this point, you can run the entire script in R without having to make adjustments. 
-
-That is, you should have:
-1. Saved the 'proof-of-concept' folder to your Desktop
-2. Set your working directory to the 'proof-of-concept' folder
-
-[Click here to access the script](proof-of-concept/PoC-script.txt)
-
-Alternately, follow the step-by-step guide below or in the RNotebook at: http://rpubs.com/Savard/PoC
+To make sure that you've set it correctly, run:
+```Rscript
+getwd()
+```
 
 ## R renv
 In order to ensure a consistent environment across multiple machines, use the ```renv.lock``` file to install the exact R packages. To do this, follow these steps:
@@ -84,6 +80,18 @@ In order to ensure a consistent environment across multiple machines, use the ``
 2. execute ```renv::init()``` in R to automatically install the packages declared in that lockfile into your own private project library. 
 
 By following these steps, you will be able to work within the project usign the exact same R packages. For further instructions on renv go to: https://rstudio.github.io/renv/
+
+# Script
+Note, if you have followed the exact set-up instructions up to this point, you can run the entire script in R without having to make adjustments. 
+
+That is, you should have:
+1. Saved the 'proof-of-concept' folder to your Desktop
+2. Set your working directory to the 'proof-of-concept' folder
+3. run ```renv::init()```
+
+[Click here to access the script](proof-of-concept/PoC-script.txt)
+
+Alternately, follow the step-by-step guide below or in the RNotebook at: http://rpubs.com/Savard/PoC
 
 ## Install packages
 To install the latest development version of the required packages, run:
