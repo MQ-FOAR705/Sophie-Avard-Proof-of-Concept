@@ -1,7 +1,7 @@
 
 
 # Background
-This repository was created as part of the Digital Humanities unit within Masters of Research at Macquarie University. It is a proof of concept (POC) that attempts to use digital tools and techniques for analysing qualitative data. Moreover, attempts have been made to automate testing via continuous integration. 
+This repository was created as part of the Digital Humanities unit within Masters of Research at Macquarie University. It is a proof of concept (PoC) that attempts to use digital tools and techniques for improving the efficiency of analysing qualitative data. Attempts have been made to automate testing via continuous integration. 
 
 This PoC is a lightweight and easy-to-use tool for analysing qualitative data in R. This repository provides instructions and an installation script for running this tool in R. This tool can be used for any textual data, such as: interview transcripts, fieldwork notes, and primary documents.
 
@@ -21,15 +21,16 @@ You can view my Notebook at http://rpubs.com/Savard/POC-Notebook.
 - [License](#license)
 
 # Outline
-For this PoC, I searched Macquarie University's Library and found two pdf documents that were relevant to my MRes thesis. These were downloaded and saved to my PoC repository. 
+Originally, I intended to develop a digital tool that automatically tagged multiple sources of data. However, during elaboration I realised that my use of tags was subjective and therefore it had to be done manually. I then decided to construct a pipeline that allowed me to manually tag data more efficiently. As such, the main focus of this PoC was to automated a process that built a path to a folder holding my files, converted these files into text files, and copied them into a folder which I could then access through an R package that helped with textual analysis. 
+
+For this PoC, I searched Macquarie University's Library and found two pdf documents that were relevant to my MRes thesis. These were downloaded and saved to a folder called 'pdfs' in my PoC directory. 
 
 I then used R to:
-- Create a folder called 'txts'
 - Convert the pdfs to txt files 
-- Move the txt files to the 'txts' folder
-- Import qcoder package 
+- Move the txt files to a folder called 'txts' 
 - Import units and codes for textual analysis 
-- Build a path between the txt files and R 
+- Copy the txt files into a folder called 'documents'
+- Build a path between the documents folder and R
 - Reduce repeitive work by integrating all of these processes
 
 # Installation
@@ -55,7 +56,7 @@ brew cask install rstudio
 ```
 
 # Setup
-In order for this tool to work you need to download the [proof-of-concept zip file](proof-of-concept.zip) and save it to your Desktop as 'proof-of-concept'. Follow the instruction in this README to run the R script, for a more detailed description of how I used the script to run my PoC visit my RNotebook at: http://rpubs.com/Savard/POC-Notebook.
+In order for this tool to work, the [proof-of-concept zip file](proof-of-concept.zip) needs to be downloaded and saved to your Desktop as 'proof-of-concept'. Follow the instruction in this README to run the R script, for a more detailed description of how I used the script to run my PoC visit my R notebook at: http://rpubs.com/Savard/POC-Notebook.
 
 ## Set working directory
 In order for this PoC to work, users must set their working directory to the 'proof-of-concept' directory (this should have been saved on the Desktop. To set your working directory, run: 
@@ -77,7 +78,7 @@ In order to ensure a consistent environment across multiple machines, use the ``
 By following these steps, you will be able to work within the project usign the exact same R packages. For further instructions on renv go to: https://rstudio.github.io/renv/
 
 # Script
-For deployment instructions, follow the step-by-step guide below or in my POC notebook at: http://rpubs.com/Savard/PoC
+For deployment instructions, follow the step-by-step guide below or in my notebook at: http://rpubs.com/Savard/PoC
 
 Entire script can be found [here](poc-script.txt)
 
@@ -97,7 +98,7 @@ library(qcoder)
 
 ```
 
-## Pdf to Text 
+## Pdf to text 
 As the textual analysis requires the use of txt files, users need to convert pdf documents into txt. To do this, run the following script in RStudio:
 
 ```Rscript
@@ -124,23 +125,23 @@ Once you have have run this script, check the 'txts' folder in the proof-of-conc
 
 
 ## Importing data
-Firstly, ensure that your working directory is proof-of-concept:
+Firstly, ensure that your working directory is set to the proof-of-concept folder:
 
 ```Rscript 
 getwd()
 ```
 
-For the purposes of this project the user will be using a project that has already been created. For future references, if you want to create an empty project, run:
+For the purpose of this project, you will be using a project that has already been created. For future references, if you want to create an empty project, run:
 ```Rscript
 create_qcoder_project("insert-peroject-name-here")
 ```
 
-To import the data proof-of-concept data into Qcoder, run: 
+To import the proof-of-concept data into Qcoder, run: 
 ```Rscript
 import_project_data(project = "qcoder-analysis-project")
 ```
 
-To build the paths to the data to be importated and to the dataframes where the imported data is to be stored, run: 
+To build the paths to the data to be imported and to the dataframes where the imported data is to be stored, run: 
 ```Rscript
 project_name = "qcoder-analysis-project"
 file_name <- "Fabian_2018.txt"
@@ -159,9 +160,9 @@ rawPath <- "~/Desktop/proof-of-concept/txts"
 datafiles <- dir(rawPath, "*.txt", ignore.case = TRUE, all.files = TRUE)
 file.copy(file.path(rawPath, datafiles), file_path, overwrite = TRUE)
 ```
-Note, the 'rawPath' is the file path to the txts folder within the proof-of-concept directory. This may change depending on where the user has saved this directory. 
+Note, the 'rawPath' is the file path to the txts folder within the proof-of-concept directory. This may change depending on where you have saved this directory. 
 
-If following the instructions in the PoC RNotebook, make sure you adjust the rawPath from ```rawPath <- "~/Desktop/Sophie-Avard-Proof-of-Concept/proof-of-concept/txts"``` to ```rawPath <- "~/Desktop/proof-of-concept/txts"```
+If following the instructions in the notebook, make sure you adjust the rawPath from ```"~/Desktop/Sophie-Avard-Proof-of-Concept/proof-of-concept/txts"``` to ```"~/Desktop/proof-of-concept/txts"```
 
 
 Check the 'documents' folder in the qcoder_analysis_project to make sure that the text files have been copied into the folder.
@@ -178,14 +179,15 @@ qcode(use_wd=TRUE)
 ```
 
 ## Coding the data 
+For this PoC, I have provided examples in the [Results](#results) section of how I coded the two txt files in the proof-of-concept directory. 
+
 To code the data, select the qcoder-analysis-project folder then click 'Reload project for data updating'. Next, click 'add codes to text data' in the left panel. The two text files should appear in the drop-down menu under 'Document'. 
 
 ![qcoder execution](images/qcoder.png)
 
-
 If the documents are not in the drop-down menu, go to the [Issues](#issues) section and read how to fix it. 
 
-For the purposes of this PoC, I have provided examples of how I coded the two txt files in the proof-of-concept directory. Using the Shiny app, codes can be assigned to text in two ways:
+Using the shiny app, codes can be assigned to text in two ways:
 
 1. Surround the text to be coded with (QCODE)(/QCODE){#tag}. For example: 
 
@@ -200,8 +202,6 @@ Here is an example of the codes that were used to tag the files in this proof of
 
 Further instructions on how to code data using qcoder can be found at https://github.com/ropenscilabs/qcoder. 
 
-For the purposes of this PoC I have provided an example of coded data in the [Results](#results) section. 
-
 # Results
 This is an example of data that I have coded in the Shiny app: 
 ![example highlighted data](https://github.com/MQ-FOAR705/Sophie-Avard-Proof-of-Concept/blob/master/images/highlighted-data.png)
@@ -215,21 +215,21 @@ This is an example of the data that I exported as a csv format:
 # Issues
 At this stage, the Qcoder application does not save coded data when the R session ends. This is due to a bug in the Qcoder package that is out of my control. As such, data must be coded and extracted within a single session. This is a work in progress and is a high priority development item. 
 
-Moreover, occasionally the texts do not load within the 'add codes to text data' section in the shiny app - I am unable to fix this as it is a bug in the shiny app itself. To check whether to error is in the script or in the shiny app, check the 'documents' folder in the qcoder-analysis-project to make sure it contains two text files: Fabian_2018 and Robinson_2018. If both text files are in the folder it seems the script has worked. Follow these instructions to get the data in the app:
+Moreover, occasionally the texts do not load within the 'add codes to text data' section in the shiny app - I am unable to fix this as it is a bug in the shiny app itself. To check whether the error is in the script or in the shiny app, check the 'documents' folder in the qcoder-analysis-project to make sure it contains two text files: Fabian_2018 and Robinson_2018. If both text files are in the folder it means that the script has worked. Follow these instructions to get the data into the app:
 1. Open the shiny app again using ```qcode(use_wd=TRUE)``` 
 2. In the left panel go to 'add data' 
 3. Click 'select file' 
 4. Select the two documents
 5. In the left panel go to 'add codes to text data' and click the drop-down box under 'Document' 
 
-This error only occurs in the shiny app occasionally. Most of the time, the user should be able to run the script and simple select the document from the drop-down box. 
+This error only occurs in the shiny app occasionally. Most of the time the user should be able to run the script and simply select the document from the drop-down box. 
 
 # Future
 1. It is important that the bug within the shiny app is fixed so that the data loads each time. 
-2. I am currently working on being able to save and re-open qcoder sessions in R. 
+2. I hope to be able to save and re-open qcoder sessions in R in the near future.
 3. At this stage, the script cannot be run through terminal due to the ui and server of the shiny app. I am working towards being able to run the script through the terminal command ```Rscript qcoder.R```
 4. I am also working towards creating my own Shiny app for this Rscript so that it can be run easily through Chrome browser.
-5. Lastly, I am working on a script that will assign a column to the csv file for references. This script will used the document unit (eg. "1") and the document name (eg. "Fabian_2018") to automatically create an in-text references that can be pasted into my thesis. 
+5. Lastly, I am working on a script that will assign a column to the csv file for references. This script will used the document unit (eg. "1") and the document name (eg. "Fabian_2018") to automatically create an in-text references that can be pasted into my thesis. This will be started within the 'clean_data' branch.
 
 # License
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
