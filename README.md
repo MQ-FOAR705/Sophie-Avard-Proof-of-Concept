@@ -33,7 +33,7 @@ I then used R to:
 
 
 # Setup
-In order for this tool to work you need to download the raw data from the [proof-of-concept zip file](proof-of-concept.zip) and save it to your Desktop as 'proof-of-concept'. Follow the instruction in this README to run the R script, for a more detailed description of how I used the script to run my PoC visit my Notebook at: http://rpubs.com/Savard/PoC
+In order for this tool to work you need to download the raw data from the [proof-of-concept zip file](proof-of-concept.zip) and save it to your Desktop as 'proof-of-concept'. Follow the instruction in this README to run the R script, for a more detailed description of how I used the script to run my PoC visit my RNotebook at: http://rpubs.com/Savard/PoC
 
 # Installation
 Go follow the instructions at https://www.r-project.org if you need to install R. 
@@ -69,6 +69,11 @@ setwd(Users/sophieavard/Desktop/proof-of-concept)
 ```
 
 ## Install packages
+In order to ensure a consistent environment across multiple machines, use the ```renv.lock``` file to use the exact same R packages. To do this, follow these steps:
+1. clone the project repository in Github 
+2. execute ```renv::init()``` to automatically install the packages declared in that lockfile into your own private project library. 
+By following these steps, you will be able to work within the project usign the exact same R packages. For further instructions on renv go to: https://rstudio.github.io/renv/
+
 To install the latest development version of the required packages, run:
 
 ```Rscript
@@ -139,7 +144,7 @@ file_path <- "qcoder-analysis-project/documents"
 dir("qcoder-analysis-project/documents")
 ```
 
-Now the user needs to copy the files in 'txts' and place them in the 'documents' folder within the qcoder_analysis_project. To do this, run:
+Now copy the files in 'txts' and place them in the 'documents' folder within the qcoder_analysis_project. To do this, run:
 
 ```Rscript
 rawPath <- "~/Desktop/proof-of-concept/txts"
@@ -147,6 +152,9 @@ datafiles <- dir(rawPath, "*.txt", ignore.case = TRUE, all.files = TRUE)
 file.copy(file.path(rawPath, datafiles), file_path, overwrite = TRUE)
 ```
 Note, the 'rawPath' is the file path to the txts folder within the proof-of-concept directory. This may change depending on where the user has saved this directory. 
+
+If following the instructions in the PoC RNotebook, make sure you adjust the rawPath from ```rawPath <- "~/Desktop/Sophie-Avard-Proof-of-Concept/proof-of-concept/txts"``` to ```rawPath <- "~/Desktop/proof-of-concept/txts"```
+
 
 Check the 'documents' folder in the qcoder_analysis_project to make sure that the text files have been copied into the folder.
 
@@ -193,6 +201,8 @@ This is an example of the data that I exported as a csv format:
 
 # Issues
 At this stage, the Qcoder application does not save coded data when the R session ends. This is due to a bug in the Qcoder package that is out of my control. As such, data must be coded and extracted within a single session. This is a work in progress and is a high priority development item. 
+
+Moreover, occasionally the texts do not load in the 'add codes to text data' section in the shiny app - This is a bug in the shiny app itself. To check whether to error is in the script or in the shiny app, check the 'documents' folder in the qcoder-analysis-project to make sure it contains two text files: Fabian_2018 and Robinson_2018. 
 
 # Future
 1. I am currently working on being able to save and re-open qcoder sessions in R. 
