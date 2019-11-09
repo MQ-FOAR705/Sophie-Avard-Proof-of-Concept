@@ -12,8 +12,9 @@ You can view my Notebook at http://rpubs.com/Savard/PoC.
 
 # Table of Contents
 - [Outline of the project](#outline)
-- [Setup](#setup)
 - [Installation](#installation)
+- [Setup](#setup)
+- [Script](#script)
 - [Results](#results)
 - [Issues](#issues)
 - [Future direction](#future)
@@ -30,10 +31,6 @@ I then used R to:
 - Import units and codes for textual analysis 
 - Build a path between the txt files and R 
 - Reduce repeitive work by integrating all of these processes
-
-
-# Setup
-In order for this tool to work you need to download the [proof-of-concept zip file](proof-of-concept.zip) and save it to your Desktop as 'proof-of-concept'. Follow the instruction in this README to run the R script, for a more detailed description of how I used the script to run my PoC visit my RNotebook at: http://rpubs.com/Savard/PoC
 
 # Installation
 Go follow the instructions at https://www.r-project.org if you need to install R. 
@@ -56,24 +53,47 @@ echo 'Sys.setlocale(category="LC_ALL", locale = "en_US.UTF-8")' >> ~/.bash_profi
 
 brew cask install rstudio
 ```
+
+# Setup
+In order for this tool to work you need to download the [proof-of-concept zip file](proof-of-concept.zip) and save it to your Desktop as 'proof-of-concept'. Follow the instruction in this README to run the R script, for a more detailed description of how I used the script to run my PoC visit my notebook at: http://rpubs.com/Savard/POC-Notebook
+
 ## Set working directory
-In order for this PoC to work, users must set their working directory to the proof-of-concept directory (this should have been saved on the Desktop during [Setup](#setup). To set your working directory, run: 
+In order for this PoC to work, users must set their working directory to the 'proof-of-concept' directory (this should have been saved on the Desktop. To set your working directory, run: 
 
 ```Rscript
 setwd("$HOME/path/to/proof-of-concept")
 ```
 For example, 
 ```Rscript 
-setwd("~/Desktop/proof-of-concept")
+setwd("/Users/sophieavard/Desktop/proof-of-concept")
 ```
 
-## Install packages
+To make sure that you've set it correctly, run:
+```Rscript
+getwd()
+```
+
+## R renv
 In order to ensure a consistent environment across multiple machines, use the ```renv.lock``` file to install the exact R packages. To do this, follow these steps:
-1. ensure your working directory is set to proof-of-concept 
-2. ensure that the ```renv.lock``` file is in this directory
-2. execute ```renv::init()``` to automatically install the packages declared in that lockfile into your own private project library. 
+1. ensure your working directory is set to the 'proof-of-concept' folder (follow the steps outlined above)
+2. ensure that the ```renv.lock``` file is in this directory (if it is not there, it can be located [here](proof-of-concept/renv.lock)
+2. execute ```renv::init()``` in R to automatically install the packages declared in that lockfile into your own private project library. 
+
 By following these steps, you will be able to work within the project usign the exact same R packages. For further instructions on renv go to: https://rstudio.github.io/renv/
 
+# Script
+Note, if you have followed the exact set-up instructions up to this point, you can run the entire script in R without having to make adjustments. 
+
+That is, you should have:
+1. Saved the 'proof-of-concept' folder to your Desktop
+2. Set your working directory to the 'proof-of-concept' folder
+3. run ```renv::init()```
+
+[Click here to access the script](proof-of-concept/PoC-script.txt)
+
+Alternately, follow the step-by-step guide below or in the tebook at: http://rpubs.com/Savard/POC-Notebook
+
+## Install packages
 To install the latest development version of the required packages, run:
 
 ```Rscript
@@ -168,8 +188,6 @@ Lastly, to open the qcoder analysis, run:
 ```Rscript
 qcode(use_wd=TRUE)
 ```
-
-Please note, a breakdown of this R script and its function is located in my Notebook at http://rpubs.com/Savard/PoC
 
 ## Coding the data 
 To code the data, select the qcoder-analysis-project folder then click 'Reload project for data updating'. Next, click 'add codes to text data' in the left panel. The two text files should appear in the drop-down menu under 'Document'. 

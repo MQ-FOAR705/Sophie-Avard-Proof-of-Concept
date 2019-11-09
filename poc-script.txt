@@ -1,6 +1,14 @@
+#run this after you have set the working directory and have run rent::init() 
+
 
 #set working directory to $HOME/Desktop/proof-of-concept
-setwd("~Desktop/proof-of-concept")
+#setwd()
+#setwd("/Users/sophieavard/Desktop/proof-of-concept")
+
+
+#to make sure you've set the working directory correctly
+#getwd()
+
 
 #install packages
 install.packages('plyr', repos = "http://cran.us.r-project.org")
@@ -10,7 +18,6 @@ library(pdftools)
 install.packages("devtools")
 devtools::install_github("ropenscilabs/qcoder")
 library(qcoder)
-
 
 
 #pdf-to-text

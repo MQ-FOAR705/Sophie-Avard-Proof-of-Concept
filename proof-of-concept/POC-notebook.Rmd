@@ -4,7 +4,6 @@ output: html_notebook
 ---
 Below is a step-by-step guide on how to run the R script.
 
-
 ```{r}
 #set working directory to $HOME/Desktop/proof-of-concept
 #setwd("/Users/sophieavard/Desktop/proof-of-concept")
@@ -12,7 +11,7 @@ Below is a step-by-step guide on how to run the R script.
 You need to set your working directory to the proof-of-concept folder (which should be saved on your Desktop). 
 
 ```{r}
-#getwd()
+getwd()
 ```
 
 ```{r}
@@ -25,7 +24,7 @@ devtools::install_github("ropenscilabs/qcoder")
 
 library(qcoder)
 ```
-Install all of the packages needed for this proof of concept. The devtools package makes package development easier as it provides R functions that simplify common tasks. The last two lines of the script installs the textual analysis package 'qcoder'.
+Install all of the packages needed for this proof of concept. The pdftools packages allows users to convert pdfs to text files. The devtools package makes package development easier as it provides R functions that simplify common tasks. The last two lines of the script installs the textual analysis package 'qcoder'.
 
 ```{r}
 file.names <- dir(path="pdfs", pattern =".pdf", full.names=TRUE)
@@ -80,7 +79,7 @@ datafiles <- dir(rawPath, "*.txt", ignore.case = TRUE, all.files = TRUE)
 
 file.copy(file.path(rawPath, datafiles), file_path, overwrite = TRUE)
 ```
-rawPath builds a path to the directory holding the txt files 
+rawPath builds a path to the directory holding the txt files - make sure you change this to the path of the 'proof-of-concept' folder (located on your Desktop)
 datafiles builds a path to the files containing ".txt" within the rawPath
 ignore.case = TRUE constructs a case insensitive pattern 
 
