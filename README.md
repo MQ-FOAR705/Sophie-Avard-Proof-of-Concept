@@ -78,11 +78,11 @@ To install the latest development version of the required packages, run:
 ```Rscript
 #packages for pdf to txt
 install.packages('plyr', repos = "http://cran.us.r-project.org")
-install.packages("pdftools", repos = "http://cran.us.r-project.org")
+install.packages("pdftools")
 library(pdftools)
 
 #packages for textual analysis
-install.packages("devtools", repos = "http://cran.us.r-project.org")
+install.packages("devtools")
 devtools::install_github("ropenscilabs/qcoder")
 library(qcoder)
 
