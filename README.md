@@ -7,21 +7,21 @@ This PoC is a lightweight and easy-to-use tool for analysing qualitative data in
 
 This R script uses the qcoder package at https://github.com/ropenscilabs/qcoder. 
 
-You can view my Notebook at http://rpubs.com/Savard/PoC.
+You can view my Notebook at http://rpubs.com/Savard/POC-Notebook.
 
 
 # Table of Contents
 - [Outline of the project](#outline)
 - [Installation](#installation)
 - [Setup](#setup)
-- [Script](#script)
+- [R Script](#script)
 - [Results](#results)
 - [Issues](#issues)
 - [Future direction](#future)
 - [License](#license)
 
 # Outline
-For this PoC, I searched Macquarie University's Library and found two pdf documents that are relevant to my MRes thesis. These were downloaded and saved to my PoC repository. 
+For this PoC, I searched Macquarie University's Library and found two pdf documents that were relevant to my MRes thesis. These were downloaded and saved to my PoC repository. 
 
 I then used R to:
 - Create a folder called 'txts'
@@ -55,7 +55,7 @@ brew cask install rstudio
 ```
 
 # Setup
-In order for this tool to work you need to download the [proof-of-concept zip file](proof-of-concept.zip) and save it to your Desktop as 'proof-of-concept'. Follow the instruction in this README to run the R script, for a more detailed description of how I used the script to run my PoC visit my notebook at: http://rpubs.com/Savard/POC-Notebook
+In order for this tool to work you need to download the [proof-of-concept zip file](proof-of-concept.zip) and save it to your Desktop as 'proof-of-concept'. Follow the instruction in this README to run the R script, for a more detailed description of how I used the script to run my PoC visit my RNotebook at: http://rpubs.com/Savard/POC-Notebook.
 
 ## Set working directory
 In order for this PoC to work, users must set their working directory to the 'proof-of-concept' directory (this should have been saved on the Desktop. To set your working directory, run: 
@@ -68,11 +68,6 @@ For example,
 setwd("/Users/sophieavard/Desktop/proof-of-concept")
 ```
 
-To make sure that you've set it correctly, run:
-```Rscript
-getwd()
-```
-
 ## R renv
 In order to ensure a consistent environment across multiple machines, use the ```renv.lock``` file to install the exact R packages. To do this, follow these steps:
 1. ensure your working directory is set to the 'proof-of-concept' folder (follow the steps outlined above)
@@ -82,16 +77,9 @@ In order to ensure a consistent environment across multiple machines, use the ``
 By following these steps, you will be able to work within the project usign the exact same R packages. For further instructions on renv go to: https://rstudio.github.io/renv/
 
 # Script
-Note, if you have followed the exact set-up instructions up to this point, you can run the entire script in R without having to make adjustments. 
+For deployment instructions, follow the step-by-step guide below or in my POC notebook at: http://rpubs.com/Savard/PoC
 
-That is, you should have:
-1. Saved the 'proof-of-concept' folder to your Desktop
-2. Set your working directory to the 'proof-of-concept' folder
-3. run ```renv::init()```
-
-[Click here to access the script](proof-of-concept/PoC-script.txt)
-
-Alternately, follow the step-by-step guide below or in the tebook at: http://rpubs.com/Savard/POC-Notebook
+Entire script can be found [here](poc-script.txt)
 
 ## Install packages
 To install the latest development version of the required packages, run:
