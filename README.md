@@ -55,7 +55,7 @@ brew cask install rstudio
 ```
 
 # Setup
-In order for this tool to work you need to download the [proof-of-concept zip file](proof-of-concept.zip) and save it to your Desktop as 'proof-of-concept'. Follow the instruction in this README to run the R script, for a more detailed description of how I used the script to run my PoC visit my RNotebook at: http://rpubs.com/Savard/PoC
+In order for this tool to work you need to download the [proof-of-concept zip file](proof-of-concept.zip) and save it to your Desktop as 'proof-of-concept'. Follow the instruction in this README to run the R script, for a more detailed description of how I used the script to run my PoC visit my notebook at: http://rpubs.com/Savard/POC-Notebook
 
 ## Set working directory
 In order for this PoC to work, users must set their working directory to the 'proof-of-concept' directory (this should have been saved on the Desktop. To set your working directory, run: 
@@ -91,7 +91,7 @@ That is, you should have:
 
 [Click here to access the script](proof-of-concept/PoC-script.txt)
 
-Alternately, follow the step-by-step guide below or in the RNotebook at: http://rpubs.com/Savard/PoC
+Alternately, follow the step-by-step guide below or in the tebook at: http://rpubs.com/Savard/POC-Notebook
 
 ## Install packages
 To install the latest development version of the required packages, run:
@@ -188,8 +188,6 @@ Lastly, to open the qcoder analysis, run:
 ```Rscript
 qcode(use_wd=TRUE)
 ```
-
-Please note, a breakdown of this R script and its function is located in my Notebook at http://rpubs.com/Savard/PoC
 
 ## Coding the data 
 To code the data, select the qcoder-analysis-project folder then click 'Reload project for data updating'. Next, click 'add codes to text data' in the left panel. The two text files should appear in the drop-down menu under 'Document'. 
