@@ -57,34 +57,33 @@ brew cask install rstudio
 In order for this tool to work you need to download the [proof-of-concept zip file](proof-of-concept.zip) and save it to your Desktop as 'proof-of-concept'. Follow the instruction in this README to run the R script, for a more detailed description of how I used the script to run my PoC visit my RNotebook at: http://rpubs.com/Savard/PoC
 
 ## Set working directory
-In order for this PoC to work, users must set their working directory to the proof-of-concept directory (this should have been saved on the Desktop. To set your working directory, run: 
+In order for this PoC to work, users must set their working directory to the 'proof-of-concept' directory (this should have been saved on the Desktop. To set your working directory, run: 
 
 ```Rscript
 setwd("$HOME/path/to/proof-of-concept")
 ```
 For example, 
 ```Rscript 
-setwd("~/Desktop/proof-of-concept")
+setwd("/Users/sophieavard/Desktop/proof-of-concept")
 ```
+
+Note, if you have followed the exact set-up instructions up to this point, you can run the entire script in R without having to make adjustments. 
+
+That is, you should have:
+1. Saved the 'proof-of-concept' folder to your Desktop
+2. Set your working directory to the 'proof-of-concept' folder
+
+[Click here to access the script](proof-of-concept/PoC-script.txt)
+
+Alternately, follow the step-by-step guide below or in the RNotebook at: http://rpubs.com/Savard/PoC
 
 ## R renv
 In order to ensure a consistent environment across multiple machines, use the ```renv.lock``` file to install the exact R packages. To do this, follow these steps:
 1. ensure your working directory is set to the 'proof-of-concept' folder (follow the steps outlined above)
 2. ensure that the ```renv.lock``` file is in this directory (if it is not there, it can be located [here](proof-of-concept/renv.lock)
-2. execute ```renv::init()``` to automatically install the packages declared in that lockfile into your own private project library. 
+2. execute ```renv::init()``` in R to automatically install the packages declared in that lockfile into your own private project library. 
 
 By following these steps, you will be able to work within the project usign the exact same R packages. For further instructions on renv go to: https://rstudio.github.io/renv/
-
-Note, if have followed the exact in instructions up to this point, you can run the entire script in R without having to make adjustments. 
-
-That is, you should have:
-1. Saved the 'proof-of-concept' folder to your Desktop
-2. Set your working directory to the 'proof-of-concept' folder
-3. run ```renv::init()```
-
-[Click here to access the script](proof-of-concept/PoC-script.txt)
-
-Alternately, follow the step-by-step guide below or in the RNotebook at: http://rpubs.com/Savard/PoC
 
 ## Install packages
 To install the latest development version of the required packages, run:
