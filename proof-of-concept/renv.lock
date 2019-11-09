@@ -415,6 +415,13 @@
       "Repository": "CRAN",
       "Hash": "6c438de366d5693238d1c400deb66cb6"
     },
+    "packrat": {
+      "Package": "packrat",
+      "Version": "0.5.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "aa1fbebb6ca276f933b9f77da6d02ef3"
+    },
     "pdftools": {
       "Package": "pdftools",
       "Version": "2.2",
@@ -546,6 +553,18 @@
       "Repository": "CRAN",
       "Hash": "830aa73278dce9beba583bfe57a5c015"
     },
+    "renv": {
+      "Package": "renv",
+      "Version": "0.8.2-14",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "renv",
+      "RemoteUsername": "rstudio",
+      "RemoteRef": "master",
+      "RemoteSha": "035ef8989d5882d95ae70b3f8ff8f92c916fb70d",
+      "Hash": "cbcdda2f0c4f20ed6b0abf87e0c1aeb9"
+    },
     "reshape2": {
       "Package": "reshape2",
       "Version": "1.4.3",
@@ -587,6 +606,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "5382761b8b318da6dd3fb0f6dae3c43a"
+    },
+    "rsconnect": {
+      "Package": "rsconnect",
+      "Version": "0.8.15",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "649b33e97eb02dc7f8533a50d888ae29"
     },
     "rstudioapi": {
       "Package": "rstudioapi",
